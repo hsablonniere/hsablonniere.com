@@ -104,39 +104,39 @@ body {
   filter: grayscale(0%);
 }
 
-.elsewhere-link[title="Twitter"] {
+.elsewhere-link[title="Twitter "] {
   background-image: url(../img/rettiwt.svg);
 }
 
-.elsewhere-link[title="GitHub"] {
+.elsewhere-link[title="GitHub "] {
   background-image: url(../img/buhtig.svg);
 }
 
-.elsewhere-link[title="YouTube"] {
+.elsewhere-link[title="YouTube "] {
   background-image: url(../img/ebutuoy.svg);
 }
 
-.elsewhere-link[title="Vimeo"] {
+.elsewhere-link[title="Vimeo "] {
   background-image: url(../img/oemiv.svg);
 }
 
-.elsewhere-link[title="Linked In"] {
+.elsewhere-link[title="LinkedIn "] {
   background-image: url(../img/nideknil.svg);
 }
 
-.elsewhere-link[title="Sens Critique"] {
+.elsewhere-link[title="Sens Critique "] {
   background-image: url(../img/euqitircsnes.svg);
 }
 
-.elsewhere-link[title="Soundcloud"] {
+.elsewhere-link[title="Soundcloud "] {
   background-image: url(../img/duolcdnuos.svg);
 }
 
-.elsewhere-link[title="Medium"] {
+.elsewhere-link[title="Medium "] {
   background-image: url(../img/muidem.svg);
 }
 
-.elsewhere-link[title="Email"] {
+.elsewhere-link[title="Email "] {
   background-image: url(../img/liamg.svg);
 }
 
