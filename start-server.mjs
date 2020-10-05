@@ -41,7 +41,7 @@ async function run () {
             keepAlive({ max: 5, timeout: 100 }),
             referrerPolicy('same-origin'),
             permissionsPolicy(),
-            xContentTypeOptions(),
+            xContentTypeOptions({ nosniff: true }),
             csp(),
             ifProduction(hsts({ maxAge: ONE_YEAR, includeSubDomains: true })),
             chainUntilResponse([
