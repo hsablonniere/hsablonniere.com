@@ -18,6 +18,8 @@ import { serverName } from 'hititipi/src/middlewares/server-name.js';
 import { socketId } from 'hititipi/src/middlewares/socket-id.js';
 import { staticFile } from 'hititipi/src/middlewares/static-file.js';
 import { xContentTypeOptions } from 'hititipi/src/middlewares/x-content-type-options.js';
+import { xFrameOptions } from 'hititipi/src/middlewares/x-frame-options.js';
+import { xXssProtection } from 'hititipi/src/middlewares/x-xss-protection.js';
 
 const PORT = process.env.PORT || 8080;
 
@@ -42,6 +44,8 @@ async function run () {
             referrerPolicy('same-origin'),
             permissionsPolicy(),
             xContentTypeOptions({ nosniff: true }),
+            xFrameOptions('NONE'),
+            xXssProtection({ enabled: true, blockMode: true }),
             csp(),
             ifProduction(hsts({ maxAge: ONE_YEAR, includeSubDomains: true })),
             chainUntilResponse([
