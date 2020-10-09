@@ -20,6 +20,7 @@ import { staticFile } from 'hititipi/src/middlewares/static-file.js';
 import { xContentTypeOptions } from 'hititipi/src/middlewares/x-content-type-options.js';
 import { xFrameOptions } from 'hititipi/src/middlewares/x-frame-options.js';
 import { xXssProtection } from 'hititipi/src/middlewares/x-xss-protection.js';
+import { redirectWww } from 'hititipi/src/middlewares/redirect-www.js';
 
 const PORT = process.env.PORT || 8080;
 
@@ -50,6 +51,11 @@ async function run () {
             ifProduction(hsts({ maxAge: ONE_YEAR, includeSubDomains: true })),
             chainUntilResponse([
               ifProduction(redirectHttps()),
+              (context) => {
+                if (context.requestUrl.hostname.endsWith('hsablonniere.com')) {
+                  return redirectWww;
+                }
+              },
               redirectNormalizedPath(),
               staticFile({ root: '_site' }),
             ]),
