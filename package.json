@@ -8,10 +8,12 @@
     "build": "eleventy && npm run compress-files",
     "serve": "eleventy --serve",
     "compress-files": "hititipi-compress './_site/**/*'",
-    "start": "node start-server.mjs"
+    "start": "node start-server.mjs",
+    "webhint": "hint http://localhost:8080"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
+    "hint": "^6.1.0",
     "hititipi": "^0.6.1"
   }
 }
