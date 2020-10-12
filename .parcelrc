@@ -11,6 +11,7 @@
     "*": "@parcel/packager-raw"
   },
   "optimizers": {
+    "*.html": ["@parcel/optimizer-htmlnano"]
   },
   "reporters": ["@parcel/reporter-cli"]
 }
