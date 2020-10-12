@@ -17,6 +17,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.3",
+    "@parcel/transformer-svgo": "^2.0.0-beta.1",
     "hint": "^6.1.0",
     "hititipi": "^0.7.0",
     "parcel": "^2.0.0-beta.1",

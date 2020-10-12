@@ -2,6 +2,7 @@
   "transformers": {
     "*.html": ["@parcel/transformer-html"],
     "*.css": ["@parcel/transformer-css"],
+    "*.svg": ["@parcel/transformer-svgo"],
     "*": ["@parcel/transformer-raw"]
   },
   "resolvers": ["@parcel/resolver-default"],
