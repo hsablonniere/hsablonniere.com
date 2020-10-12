@@ -3,6 +3,7 @@
     "*.html": ["@parcel/transformer-html"],
     "*.css": ["@parcel/transformer-css"],
     "*.svg": ["@parcel/transformer-svgo"],
+    "*.jpg": ["parcel-transformer-mozjpeg"],
     "*": ["@parcel/transformer-raw"]
   },
   "resolvers": ["@parcel/resolver-default"],

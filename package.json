@@ -22,6 +22,7 @@
     "hititipi": "^0.7.0",
     "parcel": "^2.0.0-beta.1",
     "parcel-namer-preserve-structure": "file:local_modules/parcel-namer-preserve-structure",
+    "parcel-transformer-mozjpeg": "file:local_modules/parcel-transformer-mozjpeg",
     "prismjs-github": "^1.0.0"
   }
 }
