@@ -45,7 +45,7 @@ async function run () {
             referrerPolicy('same-origin'),
             permissionsPolicy(),
             xContentTypeOptions({ nosniff: true }),
-            xFrameOptions('NONE'),
+            xFrameOptions('DENY'),
             xXssProtection({ enabled: true, blockMode: true }),
             csp(),
             ifProduction(hsts({ maxAge: ONE_YEAR, includeSubDomains: true })),
