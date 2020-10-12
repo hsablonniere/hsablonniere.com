@@ -1,0 +1,14 @@
+{
+  "transformers": {
+    "*": ["@parcel/transformer-raw"]
+  },
+  "resolvers": ["@parcel/resolver-default"],
+  "bundler": "@parcel/bundler-default",
+  "namers": ["@parcel/namer-default"],
+  "packagers": {
+    "*": "@parcel/packager-raw"
+  },
+  "optimizers": {
+  },
+  "reporters": ["@parcel/reporter-cli"]
+}

@@ -5,10 +5,11 @@
     "node": "14"
   },
   "scripts": {
-    "build": "npm run clear && npm run build:eleventy && npm run build:compress",
+    "build": "npm run clear && npm run build:eleventy && npm run build:parcel && npm run build:compress",
     "build:eleventy": "eleventy --config config/.eleventy.js",
-    "build:compress": "hititipi-compress './_site/**/*'",
-    "clear": "rm -rf _site",
+    "build:parcel": "parcel build '_site/**/*.html'",
+    "build:compress": "hititipi-compress './dist/**/*'",
+    "clear": "rm -rf _site dist .parcel-cache",
     "serve": "eleventy --config config/.eleventy.js --serve",
     "start": "node start-server.mjs",
     "webhint": "hint http://localhost:8080"
@@ -18,6 +19,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.3",
     "hint": "^6.1.0",
     "hititipi": "^0.7.0",
+    "parcel": "^2.0.0-beta.1",
     "prismjs-github": "^1.0.0"
   }
 }
