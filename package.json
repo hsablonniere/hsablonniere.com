@@ -5,15 +5,19 @@
     "node": "14"
   },
   "scripts": {
-    "build": "eleventy && npm run compress-files",
-    "serve": "eleventy --serve",
-    "compress-files": "hititipi-compress './_site/**/*'",
+    "build": "npm run clear && npm run build:eleventy && npm run build:compress",
+    "build:eleventy": "eleventy --config config/.eleventy.js",
+    "build:compress": "hititipi-compress './_site/**/*'",
+    "clear": "rm -rf _site",
+    "serve": "eleventy --config config/.eleventy.js --serve",
     "start": "node start-server.mjs",
     "webhint": "hint http://localhost:8080"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.3",
     "hint": "^6.1.0",
-    "hititipi": "^0.7.0"
+    "hititipi": "^0.7.0",
+    "prismjs-github": "^1.0.0"
   }
 }
