@@ -35,7 +35,6 @@ function ifProduction (middleware) {
   };
 }
 
-// WIP
 function redirectBasedOnHash (options) {
 
   const absoluteRootPath = path.resolve(process.cwd(), options.root);
@@ -94,9 +93,9 @@ async function run () {
             xXssProtection({ enabled: true, blockMode: true }),
             csp(),
             (context) => {
-              return context.responseHeaders['content-type'] === 'text/html'
-                ? cacheControl({ 'public': true, 'must-revalidate': true, 'max-age': 0 })
-                : cacheControl({ 'public': true, 'max-age': 10 });
+              return isHtml(context.responseHeaders['content-type'])
+                ? cacheControl({ 'max-age': 180 })
+                : cacheControl({ 'max-age': ONE_YEAR, immutable: true });
             },
             contentEncoding({ gzip: true, brotli: true }),
             contentLength(),
