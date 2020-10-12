@@ -1,11 +1,13 @@
 {
   "transformers": {
+    "*.html": ["@parcel/transformer-html"],
     "*": ["@parcel/transformer-raw"]
   },
   "resolvers": ["@parcel/resolver-default"],
   "bundler": "@parcel/bundler-default",
-  "namers": ["@parcel/namer-default"],
+  "namers": ["parcel-namer-preserve-structure"],
   "packagers": {
+    "*.html": "@parcel/packager-raw-url",
     "*": "@parcel/packager-raw"
   },
   "optimizers": {
