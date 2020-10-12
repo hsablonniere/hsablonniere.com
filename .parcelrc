@@ -1,6 +1,7 @@
 {
   "transformers": {
     "*.html": ["@parcel/transformer-html"],
+    "*.css": ["@parcel/transformer-css"],
     "*": ["@parcel/transformer-raw"]
   },
   "resolvers": ["@parcel/resolver-default"],
@@ -8,6 +9,7 @@
   "namers": ["parcel-namer-preserve-structure"],
   "packagers": {
     "*.html": "@parcel/packager-raw-url",
+    "*.css": "@parcel/packager-raw-url",
     "*": "@parcel/packager-raw"
   },
   "optimizers": {
