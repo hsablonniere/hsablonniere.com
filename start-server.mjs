@@ -43,11 +43,8 @@ async function run () {
             socketId(),
             keepAlive({ max: 5, timeout: 100 }),
             referrerPolicy('same-origin'),
-            permissionsPolicy(),
             xContentTypeOptions({ nosniff: true }),
             xFrameOptions('DENY'),
-            xXssProtection({ enabled: true, blockMode: true }),
-            csp(),
             ifProduction(hsts({ maxAge: ONE_YEAR, includeSubDomains: true })),
             chainUntilResponse([
               ifProduction(redirectHttps()),
@@ -59,6 +56,9 @@ async function run () {
               redirectNormalizedPath(),
               staticFile({ root: '_site' }),
             ]),
+            permissionsPolicy(),
+            xXssProtection({ enabled: true, blockMode: true }),
+            csp(),
             (context) => {
               return context.responseHeaders['content-type'] === 'text/html'
                 ? cacheControl({ 'public': true, 'must-revalidate': true, 'max-age': 0 })
