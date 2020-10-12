@@ -4,6 +4,7 @@
     "*.css": ["@parcel/transformer-css"],
     "*.svg": ["@parcel/transformer-svgo"],
     "*.jpg": ["parcel-transformer-mozjpeg"],
+    "*.png": ["parcel-transformer-pngquant"],
     "*": ["@parcel/transformer-raw"]
   },
   "resolvers": ["@parcel/resolver-default"],
