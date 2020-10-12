@@ -13,7 +13,8 @@
     "*": "@parcel/packager-raw"
   },
   "optimizers": {
-    "*.html": ["@parcel/optimizer-htmlnano"]
+    "*.html": ["@parcel/optimizer-htmlnano"],
+    "*.css": ["@parcel/optimizer-cssnano"]
   },
   "reporters": ["@parcel/reporter-cli"]
 }
