@@ -1,4 +1,6 @@
 import http from 'http';
+import path from 'path';
+import fs from 'fs/promises';
 import { cacheControl } from 'hititipi/src/middlewares/cache-control.js';
 import { chainAll } from 'hititipi/src/middlewares/chain-all.js';
 import { chainUntilResponse } from 'hititipi/src/middlewares/chain-until-response.js';
@@ -6,6 +8,7 @@ import { contentEncoding } from 'hititipi/src/middlewares/content-encoding.js';
 import { contentLength } from 'hititipi/src/middlewares/content-length.js';
 import { csp } from 'hititipi/src/middlewares/csp.js';
 import { hititipi } from 'hititipi';
+import { isHtml } from 'hititipi/src/lib/content-type.js';
 import { hsts, ONE_YEAR } from 'hititipi/src/middlewares/hsts.js';
 import { keepAlive } from 'hititipi/src/middlewares/keep-alive.js';
 import { logRequest } from 'hititipi/src/middlewares/log-request.js';
@@ -32,6 +35,36 @@ function ifProduction (middleware) {
   };
 }
 
+// WIP
+function redirectBasedOnHash (options) {
+
+  const absoluteRootPath = path.resolve(process.cwd(), options.root);
+
+  return async (context) => {
+
+    if (context.requestMethod !== 'HEAD' && context.requestMethod !== 'GET') {
+      return;
+    }
+
+    const rootEntries = await fs.readdir(absoluteRootPath);
+
+    const [all, id] = context.requestUrl.pathname.match(/^\/(?:.+--)?([2-9a-z]{6})\/$/) || [];
+    const newPathname = rootEntries.find((entry) => entry.endsWith('--' + id));
+
+    if (newPathname == null) {
+      return;
+    }
+
+    const redirectUrl = new URL(`/${newPathname}/`, context.requestUrl);
+    return {
+      ...context, responseStatus: 301, responseHeaders: {
+        ...context.responseHeaders,
+        'location': redirectUrl.toString(),
+      },
+    };
+  };
+}
+
 async function run () {
 
   http
@@ -54,7 +87,8 @@ async function run () {
                 }
               },
               redirectNormalizedPath(),
-              staticFile({ root: '_site' }),
+              staticFile({ root: 'dist' }),
+              redirectBasedOnHash({ root: 'dist' }),
             ]),
             permissionsPolicy(),
             xXssProtection({ enabled: true, blockMode: true }),
