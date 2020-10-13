@@ -77,6 +77,10 @@ body {
   text-align: center;
 }
 
+.article-date {
+  color: #333;
+}
+
 .elsewhere {
   align-items: center;
   display: flex;
