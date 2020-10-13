@@ -5,9 +5,10 @@
     "node": "14"
   },
   "scripts": {
-    "build": "npm run clear && npm run build:eleventy && npm run build:parcel && npm run build:compress",
+    "build": "npm run clear && npm run build:eleventy && npm run build:parcel && npm run build:copy && npm run build:compress",
     "build:eleventy": "eleventy --config config/.eleventy.js",
     "build:parcel": "parcel build '_site/**/*.html'",
+    "build:copy": "cp _site/favicon.ico dist",
     "build:compress": "hititipi-compress './dist/**/*'",
     "clear": "rm -rf _site dist .parcel-cache",
     "serve": "eleventy --config config/.eleventy.js --serve",
