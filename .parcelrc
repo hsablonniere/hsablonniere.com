@@ -1,0 +1,23 @@
+{
+  "transformers": {
+    "*.html": ["@parcel/transformer-html"],
+    "*.css": ["@parcel/transformer-css"],
+    "*.svg": ["@parcel/transformer-svgo"],
+    "*.jpg": ["parcel-transformer-mozjpeg"],
+    "*.png": ["parcel-transformer-pngquant"],
+    "*": ["@parcel/transformer-raw"]
+  },
+  "resolvers": ["@parcel/resolver-default"],
+  "bundler": "@parcel/bundler-default",
+  "namers": ["parcel-namer-preserve-structure"],
+  "packagers": {
+    "*.html": "@parcel/packager-raw-url",
+    "*.css": "@parcel/packager-raw-url",
+    "*": "@parcel/packager-raw"
+  },
+  "optimizers": {
+    "*.html": ["@parcel/optimizer-htmlnano"],
+    "*.css": ["@parcel/optimizer-cssnano"]
+  },
+  "reporters": ["@parcel/reporter-cli"]
+}
