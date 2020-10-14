@@ -7,7 +7,7 @@
   "scripts": {
     "build": "npm run clear && npm run build:eleventy && npm run build:parcel && npm run build:compress",
     "build:eleventy": "eleventy --config config/.eleventy.js",
-    "build:parcel": "parcel build '_site/**/*.html'",
+    "build:parcel": "parcel build '_site/**/*.html' '_site/*-feed.xml'",
     "build:compress": "hititipi-compress './dist/**/*'",
     "clear": "rm -rf _site dist .parcel-cache",
     "serve": "eleventy --config config/.eleventy.js --serve",
@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-plugin-rss": "^1.0.9",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.3",
     "@parcel/transformer-svgo": "^2.0.0-beta.1",
     "hint": "^6.1.0",
@@ -23,6 +24,7 @@
     "parcel": "^2.0.0-beta.1",
     "parcel-namer-preserve-structure": "file:local_modules/parcel-namer-preserve-structure",
     "parcel-transformer-mozjpeg": "file:local_modules/parcel-transformer-mozjpeg",
+    "parcel-transformer-noop": "file:local_modules/parcel-transformer-noop",
     "parcel-transformer-pngquant": "file:local_modules/parcel-transformer-pngquant",
     "prismjs-github": "^1.0.0"
   }
