@@ -145,6 +145,10 @@ body {
   background-image: url(../img/duolcdnuos.svg);
 }
 
+.elsewhere-link[title="DEV "] {
+  background-image: url(../img/dev.svg);
+}
+
 .elsewhere-link[title="Medium "] {
   background-image: url(../img/muidem.svg);
 }
