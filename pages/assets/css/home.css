@@ -113,12 +113,16 @@ body {
   background-image: url(../img/rettiwt.svg);
 }
 
-.elsewhere-link[title="RSS "] {
+.elsewhere-link[title^="RSS "] {
   background-image: url(../img/ssr.svg);
 }
 
 .elsewhere-link[title="GitHub "] {
   background-image: url(../img/buhtig.svg);
+}
+
+.elsewhere-link[title="GitLab "] {
+  background-image: url(../img/baltig.svg);
 }
 
 .elsewhere-link[title="YouTube "] {
