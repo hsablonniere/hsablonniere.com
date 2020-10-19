@@ -92,14 +92,14 @@ body {
 }
 
 .elsewhere-link {
-  --size: 1.8rem;
+  --size: 1.3rem;
   background: no-repeat center center;
   background-size: contain;
   display: block;
   filter: grayscale(100%);
   font-size: 0;
   height: var(--size);
-  margin: 0.65rem;
+  margin: 0.5rem;
   width: var(--size);
 }
 
