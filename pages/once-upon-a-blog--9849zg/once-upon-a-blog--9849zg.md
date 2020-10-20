@@ -127,7 +127,7 @@ Like Jeremy, he follows the [POSSE](https://indieweb.org/POSSE) principle and th
 I learned a lot by looking at his [GitHub repo](https://github.com/nhoizey/nicolas-hoizey.com) to see how he built and configured everything.
 He wrote a great deal of really good articles, you probably already read the one about [viewport height](https://nicolas-hoizey.com/articles/2015/02/18/viewport-height-is-taller-than-the-visible-part-of-the-document-in-some-mobile-browsers/).
 
-### ![](favicon-boris-shapira.png) [Boris Shapira](https://boris.schapira.dev/)
+### ![](favicon-boris-schapira.png) [Boris Schapira](https://boris.schapira.dev/)
 
 Boris writes about the Web, but he also writes about politics, citizenship and being a dad.
 I'm not sure I'm ready to step out of my confort zone on this, but he is an inspiration.
