@@ -1,6 +1,7 @@
 {
   "transformers": {
     "*.html": ["@parcel/transformer-html"],
+    "*.xml": ["parcel-transformer-noop"],
     "*.css": ["@parcel/transformer-css"],
     "*.svg": ["@parcel/transformer-svgo"],
     "*.jpg": ["parcel-transformer-mozjpeg"],

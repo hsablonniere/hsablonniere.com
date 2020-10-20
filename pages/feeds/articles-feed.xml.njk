@@ -1,0 +1,39 @@
+---json
+{
+  "permalink": "articles-feed.xml",
+  "eleventyExcludeFromCollections": true,
+  "metadata": {
+    "title": "Articles - Hubert Sablonnière",
+    "subtitle": "Articles from Hubert Sablonnière, a software engineer from Lille who loves the Web!",
+    "url": "https://www.hsablonniere.com/",
+    "feedUrl": "https://www.hsablonniere.com/article-feed--hkx5pk.xml",
+    "author": {
+      "name": "Hubert Sablonnière",
+      "email": "hubert...sablonniere@gmail.com"
+    }
+  }
+}
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>{{ metadata.title }}</title>
+    <subtitle>{{ metadata.subtitle }}</subtitle>
+    <link href="{{ metadata.feedUrl }}" rel="self"/>
+    <link href="{{ metadata.url }}"/>
+    <updated>{{ collections.article | rssLastUpdatedDate }}</updated>
+    <id>{{ metadata.url }}</id>
+    <author>
+        <name>{{ metadata.author.name }}</name>
+        <email>{{ metadata.author.email }}</email>
+    </author>
+    {%- for article in collections.article %}
+    {% set absolutePostUrl %}{{ article.url | url | absoluteUrl(metadata.url) }}{% endset %}
+    <entry>
+        <title>{{ article.data.title }}</title>
+        <link href="{{ absolutePostUrl }}"/>
+        <updated>{{ article.date | rssDate }}</updated>
+        <id>{{ absolutePostUrl }}</id>
+        <content type="html">{{ article.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+    </entry>
+    {%- endfor %}
+</feed>

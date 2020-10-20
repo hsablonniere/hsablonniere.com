@@ -77,6 +77,10 @@ body {
   text-align: center;
 }
 
+.article-date {
+  color: #333;
+}
+
 .elsewhere {
   align-items: center;
   display: flex;
@@ -88,14 +92,14 @@ body {
 }
 
 .elsewhere-link {
-  --size: 1.8rem;
+  --size: 1.3rem;
   background: no-repeat center center;
   background-size: contain;
   display: block;
   filter: grayscale(100%);
   font-size: 0;
   height: var(--size);
-  margin: 0.65rem;
+  margin: 0.5rem;
   width: var(--size);
 }
 
@@ -109,8 +113,16 @@ body {
   background-image: url(../img/rettiwt.svg);
 }
 
+.elsewhere-link[title^="RSS "] {
+  background-image: url(../img/ssr.svg);
+}
+
 .elsewhere-link[title="GitHub "] {
   background-image: url(../img/buhtig.svg);
+}
+
+.elsewhere-link[title="GitLab "] {
+  background-image: url(../img/baltig.svg);
 }
 
 .elsewhere-link[title="YouTube "] {
@@ -131,6 +143,10 @@ body {
 
 .elsewhere-link[title="Soundcloud "] {
   background-image: url(../img/duolcdnuos.svg);
+}
+
+.elsewhere-link[title="DEV "] {
+  background-image: url(../img/dev.svg);
 }
 
 .elsewhere-link[title="Medium "] {

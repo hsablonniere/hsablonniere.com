@@ -1,6 +1,7 @@
 'use strict';
 
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const pluginRss = require('@11ty/eleventy-plugin-rss');
 
 module.exports = function (eleventyConfig) {
 
@@ -8,6 +9,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPassthroughCopy({ 'node_modules/prismjs-github/scheme.css': 'assets/css/prismjs-github.css' });
+
+  eleventyConfig.addPlugin(pluginRss);
 
   return {
     dir: {
