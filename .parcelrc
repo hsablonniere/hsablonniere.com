@@ -1,6 +1,6 @@
 {
   "transformers": {
-    "*.html": ["@parcel/transformer-html"],
+    "*.html": ["parcel-transformer-html-inline-css", "@parcel/transformer-html"],
     "*.xml": ["parcel-transformer-noop"],
     "*.css": ["@parcel/transformer-css"],
     "*.svg": ["@parcel/transformer-svgo"],
@@ -12,8 +12,8 @@
   "bundler": "@parcel/bundler-default",
   "namers": ["parcel-namer-preserve-structure"],
   "packagers": {
-    "*.html": "@parcel/packager-raw-url",
-    "*.css": "@parcel/packager-raw-url",
+    "*.html": "@parcel/packager-html",
+    "*.css": "@parcel/packager-css",
     "*": "@parcel/packager-raw"
   },
   "optimizers": {
