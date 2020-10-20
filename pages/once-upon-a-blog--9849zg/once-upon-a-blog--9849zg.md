@@ -3,15 +3,8 @@ title: Once upon a blog...
 date: 2020-10-20
 tags: article
 layout: article.njk
+stylesheets: ['./once-upon-a-blog--9849zg.css']
 ---
-
-<style>
-h3 img {
-  margin-right: 0.25rem;
-  vertical-align: middle;
-  width: 1.5rem;
-}
-</style>
 
 🎉 The date is October 20, 2020 and I can officially say: **I have a blog now!**
 

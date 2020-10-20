@@ -8,6 +8,9 @@
   <title>{{ title | safe }} - Hubert Sablonnière</title>
   <link rel="stylesheet" href="../assets/css/article.css">
   <link rel="stylesheet" href="../assets/css/prismjs-github.css">
+  {% for stylesheetPath in stylesheets %}
+  <link rel="stylesheet" href="{{ stylesheetPath }}">
+  {% endfor %}
 </head>
 <body>
 <header class="header-wrapper">
