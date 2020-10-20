@@ -242,4 +242,4 @@ If you have any suggestions regarding the future articles, please contact me or 
 
 ## Thank you
 
-😍 Thank you wonderful people: [Alexandre Berthaud](https://alexandre.berthaud.me/) for your detailed review, [Nicolas Géraud](https://twitter.com/NicolasGeraud) for your feedbacks, and [Marc-Antoine Perennou](https://twitter.com/Keruspe) for pushing me to finish this, with your kind messages (and [repetitive jokes](https://twitter.com/Keruspe/status/1316798402194272256)).
+😍 Thank you wonderful people: [Alexandre Berthaud](https://alexandre.berthaud.me/) for your detailed review, [Nicolas Géraud](https://twitter.com/NicolasGeraud) for your feedbacks, [Anthony Ricaud](https://ricaud.me/blog/) for your kind support, and [Marc-Antoine Perennou](https://twitter.com/Keruspe) for pushing me to finish this, with your kind messages (and [repetitive jokes](https://twitter.com/Keruspe/status/1316798402194272256)).
