@@ -1,6 +1,7 @@
 {
   "name": "hsablonniere.com",
   "version": "1.0.0",
+  "homepage": "https://www.hsablonniere.com",
   "engines": {
     "node": "14"
   },
