@@ -1,5 +1,6 @@
 ---
 title: Once upon a blog...
+description: First introduction about my blog, the content, my motivations, my inspirations and details about the stack.
 date: 2020-10-20
 tags: article
 layout: article.njk
