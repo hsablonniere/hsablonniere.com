@@ -24,6 +24,7 @@
     "parcel": "^2.0.0-beta.1",
     "parcel-namer-preserve-structure": "file:local_modules/parcel-namer-preserve-structure",
     "parcel-transformer-html-inline-css": "file:local_modules/parcel-transformer-html-inline-css",
+    "parcel-transformer-manifest": "file:local_modules/parcel-transformer-manifest",
     "parcel-transformer-mozjpeg": "file:local_modules/parcel-transformer-mozjpeg",
     "parcel-transformer-noop": "file:local_modules/parcel-transformer-noop",
     "parcel-transformer-pngquant": "file:local_modules/parcel-transformer-pngquant",

@@ -2,6 +2,7 @@
   "transformers": {
     "*.html": ["parcel-transformer-html-inline-css", "@parcel/transformer-html"],
     "*.(xml|txt)": ["parcel-transformer-noop"],
+    "*manifest.json": ["parcel-transformer-manifest"],
     "*.css": ["@parcel/transformer-css"],
     "*.svg": ["@parcel/transformer-svgo"],
     "*.jpg": ["parcel-transformer-mozjpeg"],
@@ -14,6 +15,7 @@
   "packagers": {
     "*.html": "@parcel/packager-html",
     "*.css": "@parcel/packager-css",
+    "*manifest.*.json": "@parcel/packager-raw-url",
     "*": "@parcel/packager-raw"
   },
   "optimizers": {
