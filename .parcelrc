@@ -1,6 +1,6 @@
 {
   "transformers": {
-    "*.html": ["parcel-transformer-html-inline-css", "@parcel/transformer-html"],
+    "*.html": ["parcel-transformer-html-inline-css", "@parcel/transformer-html", "parcel-transformer-html-og"],
     "*.(xml|txt)": ["parcel-transformer-noop"],
     "*manifest.json": ["parcel-transformer-manifest"],
     "*.css": ["@parcel/transformer-css"],

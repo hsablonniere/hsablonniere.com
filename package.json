@@ -2,6 +2,7 @@
   "name": "hsablonniere.com",
   "version": "1.0.0",
   "homepage": "https://www.hsablonniere.com",
+  "author": "Hubert Sablonnière",
   "engines": {
     "node": "14"
   },
@@ -11,6 +12,7 @@
     "build:parcel": "parcel build '_site/**/*.html' '_site/*-feed.xml' _site/robots.txt",
     "build:compress": "hititipi-compress './dist/**/*'",
     "clear": "rm -rf _site dist .parcel-cache",
+    "generate:og-images": "node tasks/generate-og-images.mjs",
     "serve": "eleventy --config config/.eleventy.js --serve",
     "start": "node start-server.mjs",
     "webhint": "hint http://localhost:8080"
@@ -25,10 +27,12 @@
     "parcel": "^2.0.0-beta.1",
     "parcel-namer-preserve-structure": "file:local_modules/parcel-namer-preserve-structure",
     "parcel-transformer-html-inline-css": "file:local_modules/parcel-transformer-html-inline-css",
+    "parcel-transformer-html-og": "file:local_modules/parcel-transformer-html-og",
     "parcel-transformer-manifest": "file:local_modules/parcel-transformer-manifest",
     "parcel-transformer-mozjpeg": "file:local_modules/parcel-transformer-mozjpeg",
     "parcel-transformer-noop": "file:local_modules/parcel-transformer-noop",
     "parcel-transformer-pngquant": "file:local_modules/parcel-transformer-pngquant",
-    "prismjs-github": "^1.0.0"
+    "prismjs-github": "^1.0.0",
+    "puppeteer": "^5.3.1"
   }
 }
