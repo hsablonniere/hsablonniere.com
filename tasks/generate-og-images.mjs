@@ -1,4 +1,5 @@
 import fs from 'fs';
+import path from 'path';
 import puppeteer from 'puppeteer';
 
 // This script assumes you're runnin Eleventy in dev mode on port 8080
@@ -7,7 +8,7 @@ const port = 8080;
 // List all pages
 const collectionsJson = fs.readFileSync('_site/.collections.json', 'utf8');
 const collections = JSON.parse(collectionsJson);
-const pageList = Object.values(collections).flatMap((a) => a)
+const pageList = Object.values(collections).flatMap((a) => a);
 
 async function generateOgImageForPage (puppeteerPage, port, page) {
 
@@ -29,7 +30,8 @@ async function generateOgImageForPage (puppeteerPage, port, page) {
   await puppeteerPage.addStyleTag({ url: '../assets/css/article-og-image.css' });
 
   // Generate run
-  const imagePath = page.inputPath.replace(/\.md$/, '.og-img.jpg')
+  const pageDir = path.parse(page.inputPath).dir;
+  const imagePath = path.join(pageDir, 'opengraph.jpg');
   await puppeteerPage.screenshot({ path: imagePath });
 
   console.log(url, 'DONE');

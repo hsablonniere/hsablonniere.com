@@ -4,7 +4,8 @@ description: First introduction about my blog, the content, my motivations, my i
 date: 2020-10-20
 tags: article
 layout: article.njk
-stylesheets: ['./once-upon-a-blog--9849zg.css']
+stylesheets:
+  - ./index.css
 ---
 
 🎉 The date is October 20, 2020 and I can officially say: **I have a blog now!**
