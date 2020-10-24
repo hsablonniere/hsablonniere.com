@@ -1,0 +1,41 @@
+{# Main URL #}
+<link rel="canonical" href="{{ pkg.homepage + page.url }}">
+<meta property="og:url" content="{{ pkg.homepage + page.url }}">
+
+{# Site name & author #}
+<meta property="og:site_name" content="{{ pkg.author }}">
+<meta name="author" content="{{ pkg.author }}">
+<meta name="og:article:author" content="{{ pkg.author }}">
+
+{# Title #}
+<meta property="og:title" content="{{ title }}">
+<meta name="twitter:title" content="{{ title }}">
+
+{# Description #}
+<meta name="description" content="{{ description }}">
+<meta property="og:description" content="{{ description }}">
+<meta name="twitter:description" content="{{ description }}">
+
+{# Image #}
+<meta property="og:image" content="{{ pkg.homepage + page.url + 'opengraph.jpg' }}">
+<meta name="twitter:image" content="{{ pkg.homepage + page.url + 'opengraph.jpg' }}">
+<meta property="og:image:height" content="630">
+<meta property="og:image:width" content="1200">
+
+{# Other stuffs :p #}
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="{{ formattedDate }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@hsablonniere">
+<meta name="twitter:site" content="@hsablonniere">
+<meta name="twitter:widgets:csp" content="on">
+<meta name="twitter:data1" content="{{ formattedDate }}">
+<meta name="twitter:label1" content="Published on">
+
+{# TODO, maybe... ?? #}
+{# <meta name="twitter:data2" content="10 minutes"> #}
+{# <meta name="twitter:label2" content="Reading Time"> #}
+{# <meta property="article:modified_time" content=""> #}
+{# <meta property="article:expiration_time" content=""> #}
+{# <meta property="article:section" content=""> #}
+{# <meta property="article:tag" content=""> #}

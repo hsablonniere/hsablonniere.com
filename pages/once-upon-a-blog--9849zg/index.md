@@ -1,9 +1,11 @@
 ---
 title: Once upon a blog...
+description: First introduction about my blog, the content, my motivations, my inspirations and details about the stack.
 date: 2020-10-20
 tags: article
 layout: article.njk
-stylesheets: ['./once-upon-a-blog--9849zg.css']
+stylesheets:
+  - ./index.css
 ---
 
 🎉 The date is October 20, 2020 and I can officially say: **I have a blog now!**
@@ -101,13 +103,13 @@ She has a strong voice and I admire her for that.
 Over the years, she shared many great projects and [interesting articles](https://lea.verou.me/2020/04/lch-colors-in-css-what-why-and-how/).
 Reading her work is always a good investment of my time.
 
-### ![](favicon-remy-sharp.ico) [Remy Sharp](https://remysharp.com/)
+### ![](favicon-remy-sharp.png) [Remy Sharp](https://remysharp.com/)
 
 Remy shares my enthusiasm for [crazy experiments with Web Audio](https://www.youtube.com/watch?v=lQMcZtiaD0A).
 I read many of [his articles](https://remysharp.com/2020/07/15/a-px-is-not-a-px) and like Jeremy, he shares links and notes on his site.
 He's also the one with the [Christmas movie suggestions](https://remysharp.com/2010/11/29/our-christmas-films-list) every year.
 
-### ![](favicon-nicolas-martignole.ico) [Nicolas Martignole](https://www.touilleur-express.fr/)
+### ![](favicon-nicolas-martignole.png) [Nicolas Martignole](https://www.touilleur-express.fr/)
 
 When I started my career, I was doing a lot of Java and Nicolas Martignole's blog, _"Le Touilleur Express"_, was the first one I followed thoroughly.
 With the passing years, he started writing about less technical topics like [managing developers](http://www.touilleur-express.fr/2018/10/16/gerer-developpeurs/) or [being a senior developer](http://www.touilleur-express.fr/2009/07/27/senior/).
@@ -153,7 +155,7 @@ There are many other [Eleventy plugins](https://www.npmjs.com/search?q=eleventy-
 I even started experimenting with an [asciidoctor](https://asciidoctor.org/) integration.
 However, if I want to beat procrastination, I really need to focus on the content and postpone this expedition in plugin land to another day. 
 
-### ![](favicon-parcel.ico) Optimized with Parcel (v2)
+### ![](favicon-parcel.png) Optimized with Parcel (v2)
 
 As explained in [this issue](https://github.com/11ty/eleventy/issues/272), Eleventy does not have an official asset pipeline.
 I don't think it's a problem, especially in my context where I don't use any CSS tool (Sass, Less, Tailwind and others).

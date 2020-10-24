@@ -1,12 +1,15 @@
 ---
 eleventyExcludeFromCollections: true
+description: This is the online home of Hubert Sablonnière, a software engineer from Lille who loves the Web!
 ---
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="favicon.ico">
+  {% include 'seo.njk' %}
+  {% include 'favicon.njk' %}
+  <link rel="manifest" href="./manifest.json">
   <link rel="alternate" type="application/rss+xml" title="Feed for articles" href="articles-feed.xml">
   <title>Hubert Sablonnière</title>
   <link rel="stylesheet" href="./assets/css/home.css">

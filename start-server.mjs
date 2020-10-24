@@ -6,9 +6,8 @@ import { chainAll } from 'hititipi/src/middlewares/chain-all.js';
 import { chainUntilResponse } from 'hititipi/src/middlewares/chain-until-response.js';
 import { contentEncoding } from 'hititipi/src/middlewares/content-encoding.js';
 import { contentLength } from 'hititipi/src/middlewares/content-length.js';
-import { csp } from 'hititipi/src/middlewares/csp.js';
 import { hititipi } from 'hititipi';
-import { isHtml } from 'hititipi/src/lib/content-type.js';
+import { isHtml, isScriptable } from 'hititipi/src/lib/content-type.js';
 import { hsts, ONE_YEAR } from 'hititipi/src/middlewares/hsts.js';
 import { keepAlive } from 'hititipi/src/middlewares/keep-alive.js';
 import { logRequest } from 'hititipi/src/middlewares/log-request.js';
@@ -61,6 +60,39 @@ function redirectBasedOnHash (options) {
         'location': redirectUrl.toString(),
       },
     };
+  };
+}
+
+export function csp (options = {}) {
+
+  return async (context) => {
+
+    const contentTypeHeader = context.responseHeaders['content-type'];
+    if (!isHtml(contentTypeHeader) && !isScriptable(contentTypeHeader)) {
+      return;
+    }
+
+    const cspHeader = [
+      `default-src 'none'`,
+      `style-src 'self' 'unsafe-inline'`,
+      `img-src 'self'`,
+      `media-src 'self'`,
+      `manifest-src 'self'`,
+      `frame-ancestors 'none'`,
+      `base-uri 'none'`,
+      'upgrade-insecure-requests',
+      'block-all-mixed-content',
+      // Not sure about those vv
+      // 'disown-opener',
+      // 'plugin-types',
+    ]
+      .filter((a) => a != null)
+      .join(';');
+
+    if (cspHeader !== '') {
+      const responseHeaders = { ...context.responseHeaders, 'content-security-policy': cspHeader };
+      return { ...context, responseHeaders };
+    }
   };
 }
 
