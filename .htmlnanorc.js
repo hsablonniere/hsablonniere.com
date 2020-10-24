@@ -1,7 +1,7 @@
 module.exports = {
 
   // This is basically the only rule that has a significan impact
-  collapseWhitespace: 'all',
+  collapseWhitespace: 'aggressive',
 
   // Not really effective in this context:
   collapseAttributeWhitespace: true,
