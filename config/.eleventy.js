@@ -2,6 +2,7 @@
 
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
+const emojiReadTime = require('@11tyrocks/eleventy-plugin-emoji-readtime');
 
 module.exports = function (eleventyConfig) {
 
@@ -11,6 +12,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'node_modules/prismjs-github/scheme.css': 'assets/css/prismjs-github.css' });
 
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(emojiReadTime, { showEmoji: false });
 
   return {
     dir: {

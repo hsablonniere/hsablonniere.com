@@ -34,5 +34,8 @@
     "parcel-transformer-pngquant": "file:local_modules/parcel-transformer-pngquant",
     "prismjs-github": "^1.0.0",
     "puppeteer": "^5.3.1"
+  },
+  "dependencies": {
+    "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1"
   }
 }
