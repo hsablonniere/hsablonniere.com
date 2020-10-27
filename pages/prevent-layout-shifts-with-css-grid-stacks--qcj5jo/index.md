@@ -277,7 +277,7 @@ The result looks like this:
 
 ![UI Component displaying the pie chart and short text states on top of each other with Firefox CSS grid inspector](./component-grid-superposed.png)
 
-If you are sceptikal, remember the appropriate panel will be hidden with a `visibility: hidden`.
+If you are skeptical, remember the appropriate panel will be hidden with a `visibility: hidden`.
 
 With this technique, we actually told the CSS engine to prepare a grid where the area at column `1 / 2` and row `2 / 3` should adapt to what's inside.
 In other words: this very area will always be as big as the biggest between `.chart` and `.info`.
