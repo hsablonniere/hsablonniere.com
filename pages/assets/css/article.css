@@ -105,6 +105,12 @@ body {
   max-width: 100%;
 }
 
+.main video {
+  border-radius: 0.25rem;
+  border: 1px solid #eee;
+  overflow: hidden;
+}
+
 .main p > code,
 .main li > code {
   background-color: #eee;

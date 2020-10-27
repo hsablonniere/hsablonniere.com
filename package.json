@@ -23,7 +23,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.3",
     "@parcel/transformer-svgo": "^2.0.0-beta.1",
     "hint": "^6.1.0",
-    "hititipi": "^0.8.0",
+    "hititipi": "^0.9.0",
     "parcel": "^2.0.0-beta.1",
     "parcel-namer-preserve-structure": "file:local_modules/parcel-namer-preserve-structure",
     "parcel-transformer-html-inline-css": "file:local_modules/parcel-transformer-html-inline-css",
@@ -34,5 +34,8 @@
     "parcel-transformer-pngquant": "file:local_modules/parcel-transformer-pngquant",
     "prismjs-github": "^1.0.0",
     "puppeteer": "^5.3.1"
+  },
+  "dependencies": {
+    "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1"
   }
 }

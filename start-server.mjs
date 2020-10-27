@@ -118,7 +118,7 @@ async function run () {
                 }
               },
               redirectNormalizedPath(),
-              staticFile({ root: 'dist' }),
+              staticFile({ root: 'dist', enableRange: true }),
               redirectBasedOnHash({ root: 'dist' }),
             ]),
             permissionsPolicy(),
