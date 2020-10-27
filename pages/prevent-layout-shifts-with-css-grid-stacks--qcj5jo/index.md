@@ -35,12 +35,12 @@ I won't cover layout shifts happening during page load.
 
 ## Let's get some context
 
-I work for [Clever Cloud](https://www.clever-cloud.com/en/), an IT automation platform.
+I work for [Clever Cloud](https://www.clever-cloud.com/en/), an IT automation platform.
 Our clients push their code and we handle the rest for them: build, deploy, host, scale, maintain, recover and so on.
 When they need to configure their applications, databases and other services, they use our web UI: "the console".
 I spend most of my time on this project and it looks like this:
 
-![Screenshot of Clever Cloud's Web console displaying the overview of a Node.js application](./console-overview.png)
+![Screenshot of Clever Cloud's Web console displaying the overview of a Node.js application](./console-overview.png)
 
 What you see in the screenshot above is the overview of my own website, a Node.js application, hosted on our platform.
 On the right, you can see a pie chart representing the repartition of HTTP response codes returned by the application in the last 24 hours.
@@ -94,13 +94,13 @@ This is even more important in this situation because I have no way to know how 
 The minimum required height will depend on:
 
 * The unknown width of the component, which depends on usage context
-* The length of the short text, which depends on the language (english or french)
+* The length of the short text, which depends on the language (English or French)
 
 The result is, the component height is a bit smaller containing the chart than containing the short text.
 
 ![Two states of the same UI Component displayed side by side. Pie chart on the left, short text on the right. English version.](./heigh-change-en.png)
 
-The issue is worse in french because the text is a bit longer:
+The issue is worse in French because the text is a bit longer:
 
 ![Two states of the same UI Component displayed side by side. Pie chart on the left, short text on the right. French version.](./heigh-change-fr.png)
 
@@ -277,7 +277,7 @@ The result looks like this:
 
 ![UI Component displaying the pie chart and short text states on top of each other with Firefox CSS grid inspector](./component-grid-superposed.png)
 
-If you are sceptikal, remember the appropriate panel will be hidden with a `visibility: hidden`.
+If you are sceptical, remember the appropriate panel will be hidden with a `visibility: hidden`.
 
 With this technique, we actually told the CSS engine to prepare a grid where the area at column `1 / 2` and row `2 / 3` should adapt to what's inside.
 In other words: this very area will always be as big as the biggest between `.chart` and `.info`.
@@ -290,7 +290,7 @@ Therefore, the height of the whole component will be the same when toggling betw
 
 😎 No more layout shifts!
 
-Compared to the absolute position solution, we improved the situtation:
+Compared to the absolute position solution, we improved the situation:
 
 * No need to add a `.wrapper`
 * Would work fine with more than two panels
@@ -301,9 +301,9 @@ Now, as a bonus, let me show you another real example where I used this techniqu
 ## Preventing horizontal shifts
 
 The previous example was about the height of a component but you can also use this technique with width.
-If you give another look at the Clever Cloud console overview, in the top right corner, you'll notice a few buttons to control your app's state.
+If you give another look at the Clever Cloud console overview, in the top right corner, you'll notice a few buttons to control your app's state.
 
-![Screenshot of Clever Cloud's Web console displaying the overview of a Node.js application](./console-overview.png)
+![Screenshot of Clever Cloud's Web console displaying the overview of a Node.js application](./console-overview.png)
 
 The "Stop app" button has bigger horizontal paddings than the other buttons.
 This is because, when clicking this very button, the text is replaced with "Click to cancel" for 3 seconds in case you ~~panick~~ changed your mind.
@@ -344,7 +344,7 @@ About CSS and grid:
 * [Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) on CSS-Tricks 
 * Please consider using Firefox and their awesome [CSS Grid Inspector](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts)
 
-The pie chart component and the button component are part of Clever Cloud's component library.
+The pie chart component and the button component are part of Clever Cloud's component library.
 The code is open-sourced on GitHub and the documentation (with live preview) is published with [Storybook](https://storybook.js.org/).
 
 You can find out more about the components we talked about here:
