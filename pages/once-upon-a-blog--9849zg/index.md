@@ -131,7 +131,7 @@ Like Nicolas Hoizey, I often look at his [GitHub repo](https://github.com/boriss
 
 ## 🛠️ The stack
 
-As of this writing, this site is mostly a static site built with [Eleventy](https://www.11ty.dev/) and hosted on [Clever Cloud](https://www.clever-cloud.com/en/).
+As of this writing, this site is mostly a static site built with [Eleventy](https://www.11ty.dev/) and hosted on [Clever Cloud](https://www.clever-cloud.com/en/).
 
 Last time I tried to start a blog, I spent all my time writing my own static site generator.
 In the end, all I got was a welcome page and no real articles.
@@ -187,7 +187,7 @@ Parcel v2 is still in beta.
 I had to create a few custom plugins and I'm looking forward to the release of official plugins to add [other improvements on images](https://github.com/parcel-bundler/parcel/issues/3738).
 You can find more details about how I used it in this [pull request](https://github.com/hsablonniere/hsablonniere.com/pull/8).
 
-### ![](favicon-clever-cloud.png) Hosted on Clever Cloud
+### ![](favicon-clever-cloud.png) Hosted on Clever Cloud
 
 When I bought this domain in 2015, I hosted this site on [OVH](https://www.ovh.com/) with Docker on a virtual private server I had.
 Configuring this by myself was fun at the beginning, but it clearly was a pain to maintain and secure.
@@ -195,7 +195,7 @@ Configuring this by myself was fun at the beginning, but it clearly was a pain t
 A few years later, I moved it to [Netlify](https://www.netlify.com/).
 When it comes to deploying a static site, they really have a nice product, even when you only have a homepage and no articles.
 
-When I started working again on this in September, I decided to move the site to [Clever Cloud](https://www.clever-cloud.com/en/).
+When I started working again on this in September, I decided to move the site to [Clever Cloud](https://www.clever-cloud.com/en/).
 First and obvious reason: I work there.
 We have a push-to-deploy mindset with lots of features around it: live logs, detailed metrics, monitoring, auto-scaling, rollbacks, auto HTTPS...
 
