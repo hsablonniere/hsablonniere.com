@@ -359,4 +359,4 @@ You can find out more about the components we talked about here:
 
 ## Thank you
 
-😍 Thank you wonderful reviewers for your time: [Julien Durillon](https://twitter.com/juuduu/), [Alexandre Berthaud](https://alexandre.berthaud.me/), [Anthony Ricaud](https://ricaud.me/blog/), [Sarah Haïm-Lubczanski](https://twitter.com/mereteresa) and [Ralf D. Müller](https://twitter.com/RalfDMueller).
+😍 Thank you wonderful reviewers for your time: [Julien Durillon](https://twitter.com/juuduu/), [Alexandre Berthaud](https://alexandre.berthaud.me/), [Anthony Ricaud](https://ricaud.me/blog/), [Sarah Haïm-Lubczanski](https://twitter.com/mereteresa), [Julien Lengrand-Lambert](https://twitter.com/jlengrand) and [Ralf D. Müller](https://twitter.com/RalfDMueller).
