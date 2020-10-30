@@ -12,7 +12,7 @@
     "build:parcel": "parcel build '_site/**/*.html' '_site/*-feed.xml' _site/robots.txt",
     "build:compress": "hititipi-compress './dist/**/*'",
     "clear": "rm -rf _site dist .parcel-cache",
-    "generate:og-images": "node tasks/generate-og-images.mjs",
+    "generate:page-images": "node tasks/generate-page-images.mjs",
     "serve": "eleventy --config config/.eleventy.js --serve",
     "start": "node start-server.mjs",
     "webhint": "hint http://localhost:8080"

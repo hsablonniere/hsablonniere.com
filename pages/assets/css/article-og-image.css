@@ -48,7 +48,7 @@ body {
 
 .main {
   align-self: center;
-  font-size: 7vh;
+  font-size: 3.5vw;
   grid-area: 2 / 1 / -1 / -1;
   justify-self: center;
   margin: 0 15vh;

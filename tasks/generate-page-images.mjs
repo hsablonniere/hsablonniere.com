@@ -10,7 +10,7 @@ const collectionsJson = fs.readFileSync('_site/.collections.json', 'utf8');
 const collections = JSON.parse(collectionsJson);
 const pageList = Object.values(collections).flatMap((a) => a);
 
-async function generateOgImageForPage (puppeteerPage, port, page) {
+async function generatePageImage (puppeteerPage, port, page) {
 
   const url = `http://localhost:${port}${page.url}`;
 
@@ -29,12 +29,21 @@ async function generateOgImageForPage (puppeteerPage, port, page) {
   // Inject dedicated style for OG image
   await puppeteerPage.addStyleTag({ url: '../assets/css/article-og-image.css' });
 
-  // Generate run
   const pageDir = path.parse(page.inputPath).dir;
-  const imagePath = path.join(pageDir, 'opengraph.jpg');
-  await puppeteerPage.screenshot({ path: imagePath });
 
-  console.log(url, 'DONE');
+  // Prepare viewport for OpenGraph image
+  // Those dimension seems to be the recommendation for Facebook/Twitter
+  puppeteerPage.setViewport({ width: 1200, height: 630 });
+  const opengraphImagePath = path.join(pageDir, 'opengraph.jpg');
+  await puppeteerPage.screenshot({ path: opengraphImagePath });
+  console.log('>', opengraphImagePath, 'DONE!');
+
+  // Prepare viewport for atom feed image
+  // Feedly seems to use 4/3 images
+  puppeteerPage.setViewport({ width: 1200, height: 900 });
+  const feedImagePath = path.join(pageDir, 'feed-preview.jpg');
+  await puppeteerPage.screenshot({ path: feedImagePath });
+  console.log('>', feedImagePath, 'DONE!');
 }
 
 async function run ({ port, pageList }) {
@@ -43,14 +52,10 @@ async function run ({ port, pageList }) {
   const browser = await puppeteer.launch();
   const puppeteerPage = await browser.newPage();
 
-  // Prepare viewport for OpenGraph image
-  // Those dimension seems to be the recommendation for Facebook/Twitter
-  puppeteerPage.setViewport({ width: 1200, height: 630 });
-
-  console.log('Generating OpenGraph images for articles...');
+  console.log('Generating images for articles...');
 
   for (const page of pageList) {
-    await generateOgImageForPage(puppeteerPage, port, page);
+    await generatePageImage(puppeteerPage, port, page);
   }
 
   await browser.close();
