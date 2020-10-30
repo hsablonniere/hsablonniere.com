@@ -3,7 +3,7 @@
   "permalink": "articles-feed.xml",
   "eleventyExcludeFromCollections": true,
   "metadata": {
-    "title": "Articles - Hubert Sablonnière",
+    "title": "Hubert Sablonnière - Articles",
     "subtitle": "Articles from Hubert Sablonnière, a software engineer from Lille who loves the Web!",
     "url": "https://www.hsablonniere.com/",
     "feedUrl": "https://www.hsablonniere.com/articles-feed.xml",
@@ -15,7 +15,7 @@
 }
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:webfeeds="http://webfeeds.org/rss/1.0">
     <title>{{ metadata.title }}</title>
     <subtitle>{{ metadata.subtitle }}</subtitle>
     <link href="{{ metadata.feedUrl }}" rel="self"/>
@@ -26,6 +26,9 @@
         <name>{{ metadata.author.name }}</name>
         <email>{{ metadata.author.email }}</email>
     </author>
+
+    <webfeeds:icon>{{ metadata.url }}assets/img/apple-touch-icon-120x120.png</webfeeds:icon>
+
     {%- for article in collections.article %}
     {% set absolutePostUrl %}{{ article.url | url | absoluteUrl(metadata.url) }}{% endset %}
     <entry>
@@ -33,7 +36,13 @@
         <link href="{{ absolutePostUrl }}"/>
         <updated>{{ article.date | rssDate }}</updated>
         <id>{{ absolutePostUrl }}</id>
-        <content type="html">{{ article.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+        <content type="html">
+          {{ article.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
+          &lt;br&gt;
+          &lt;br&gt;
+          &lt;br&gt;
+          &lt;img src="{{ absolutePostUrl + '/feed-preview.jpg' }}" class="webfeedsFeaturedVisual"&gt;
+        </content>
     </entry>
     {%- endfor %}
 </feed>

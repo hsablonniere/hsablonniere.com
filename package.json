@@ -12,7 +12,7 @@
     "build:parcel": "parcel build '_site/**/*.html' '_site/*-feed.xml' _site/robots.txt",
     "build:compress": "hititipi-compress './dist/**/*'",
     "clear": "rm -rf _site dist .parcel-cache",
-    "generate:og-images": "node tasks/generate-og-images.mjs",
+    "generate:page-images": "node tasks/generate-page-images.mjs",
     "serve": "eleventy --config config/.eleventy.js --serve",
     "start": "node start-server.mjs",
     "webhint": "hint http://localhost:8080"
@@ -21,11 +21,14 @@
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.3",
+    "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
     "@parcel/transformer-svgo": "^2.0.0-beta.1",
     "hint": "^6.1.0",
     "hititipi": "^0.9.0",
+    "html-escaper": "^3.0.0",
     "parcel": "^2.0.0-beta.1",
     "parcel-namer-preserve-structure": "file:local_modules/parcel-namer-preserve-structure",
+    "parcel-transformer-atom-feed": "file:local_modules/parcel-transformer-atom-feed",
     "parcel-transformer-html-inline-css": "file:local_modules/parcel-transformer-html-inline-css",
     "parcel-transformer-html-og": "file:local_modules/parcel-transformer-html-og",
     "parcel-transformer-manifest": "file:local_modules/parcel-transformer-manifest",
@@ -34,8 +37,5 @@
     "parcel-transformer-pngquant": "file:local_modules/parcel-transformer-pngquant",
     "prismjs-github": "^1.0.0",
     "puppeteer": "^5.3.1"
-  },
-  "dependencies": {
-    "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1"
   }
 }

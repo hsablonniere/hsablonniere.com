@@ -61,8 +61,8 @@ module.exports = new Transformer({
       },
     ];
 
-    let ast = nullthrows(await asset.getAST());
-    let res = await posthtml(plugins).process(ast.program, {
+    const ast = nullthrows(await asset.getAST());
+    const res = await posthtml(plugins).process(ast.program, {
       skipParse: true,
       plugins,
     });

@@ -1,7 +1,8 @@
 {
   "transformers": {
     "*.html": ["parcel-transformer-html-inline-css", "@parcel/transformer-html", "parcel-transformer-html-og"],
-    "*.(xml|txt)": ["parcel-transformer-noop"],
+    "*-feed.xml": ["parcel-transformer-atom-feed"],
+    "*.txt": ["parcel-transformer-noop"],
     "*manifest.json": ["parcel-transformer-manifest"],
     "*.css": ["@parcel/transformer-css"],
     "*.svg": ["@parcel/transformer-svgo"],
@@ -14,6 +15,7 @@
   "namers": ["parcel-namer-preserve-structure"],
   "packagers": {
     "*.html": "@parcel/packager-html",
+    "*-feed.xml": "@parcel/packager-raw-url",
     "*.css": "@parcel/packager-css",
     "*manifest.*.json": "@parcel/packager-raw-url",
     "*": "@parcel/packager-raw"
