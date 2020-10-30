@@ -21,6 +21,7 @@
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.3",
+    "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
     "@parcel/transformer-svgo": "^2.0.0-beta.1",
     "hint": "^6.1.0",
     "hititipi": "^0.9.0",
@@ -34,8 +35,5 @@
     "parcel-transformer-pngquant": "file:local_modules/parcel-transformer-pngquant",
     "prismjs-github": "^1.0.0",
     "puppeteer": "^5.3.1"
-  },
-  "dependencies": {
-    "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1"
   }
 }
