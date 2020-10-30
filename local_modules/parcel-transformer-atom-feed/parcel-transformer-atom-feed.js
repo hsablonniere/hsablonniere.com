@@ -24,6 +24,21 @@ function transformAtomXml (atomXmlString, asset, rootDir, assetDir) {
 
   const plugins = [
     (tree) => {
+      tree.match({ tag: 'webfeeds:icon' }, (node) => {
+
+        // NOTE: We should check for a startsWith origin of the site
+        const url = new URL(node.content);
+        const absolutePath = path.join(rootDir, url.pathname);
+        const relativePath = './' + path.relative(assetDir, absolutePath);
+
+        // Create a relative URL dependency, so it's linked to the image
+        const idForRelativePath = asset.addURLDependency(relativePath);
+
+        // Rewrite the URL with the new relative path id
+        node.content = url.origin + idForRelativePath;
+
+        return node;
+      });
       tree.match({ tag: 'content', attrs: { type: 'html' } }, (node) => {
 
         const encodedHtmlString = node.content;
