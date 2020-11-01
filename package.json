@@ -13,6 +13,7 @@
     "build:compress": "hititipi-compress './dist/**/*'",
     "clear": "rm -rf _site dist .parcel-cache",
     "generate:page-images": "node tasks/generate-page-images.mjs",
+    "cross-post": "node tasks/cross-post.mjs",
     "serve": "eleventy --config config/.eleventy.js --serve",
     "start": "node start-server.mjs",
     "webhint": "hint http://localhost:8080"
@@ -35,7 +36,10 @@
     "parcel-transformer-mozjpeg": "file:local_modules/parcel-transformer-mozjpeg",
     "parcel-transformer-noop": "file:local_modules/parcel-transformer-noop",
     "parcel-transformer-pngquant": "file:local_modules/parcel-transformer-pngquant",
+    "posthtml": "^0.13.4",
+    "posthtml-urls": "^1.0.0",
     "prismjs-github": "^1.0.0",
-    "puppeteer": "^5.3.1"
+    "puppeteer": "^5.3.1",
+    "superagent": "^6.1.0"
   }
 }
