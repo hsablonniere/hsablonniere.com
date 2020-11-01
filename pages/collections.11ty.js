@@ -24,6 +24,8 @@ module.exports = class {
           date: page.date,
           inputPath: page.inputPath,
           outputPath: page.outputPath,
+          title: page.data.title,
+          description: page.data.description,
         });
       }
     }
