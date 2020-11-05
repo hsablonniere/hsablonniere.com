@@ -21,14 +21,14 @@
   <div class="header-title"><a href="/" title="Home" rel="home">Hubert Sablonnière</a></div>
   <img class="header-avatar" src="../assets/img/hsablonniere.jpg" alt="Hubert Sablonnière avatar" width="120px">
 </header>
-<main class="main">
+<article class="main" role="main">
   <h1>{{ title | safe }}</h1>
   <div class="publication-date">Published on {{ formattedDate }} ・ {{ content | emojiReadTime }}</div>
   {{ content | safe }}
   <div class="edit-link-wrapper">
     <a href="{{ githubEditUrl }}">Edit this article on GitHub</a>
   </div>
-</main>
+</article>
 <footer class="footer">© Hubert Sablonnière</footer>
 </body>
 </html>
