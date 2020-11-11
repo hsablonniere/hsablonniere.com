@@ -18,6 +18,7 @@ module.exports = class {
       }
       for (const page of pageList) {
         collectionList[name].push({
+          id: page.data.id,
           url: page.url,
           fileSlug: page.fileSlug,
           filePathStem: page.filePathStem,

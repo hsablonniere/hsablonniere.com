@@ -1,4 +1,5 @@
 ---
+id: qcj5jo
 title: Prevent layout shifts with CSS grid stacks
 description: Detailed explanation with real examples of a CSS grid technique I used to prevent layout shifts when a component state changes.
 date: 2020-10-27
