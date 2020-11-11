@@ -17,6 +17,7 @@
     "cross-post": "node tasks/cross-post.mjs",
     "serve": "eleventy --config config/.eleventy.js --serve",
     "start": "node start-server.mjs",
+    "update-article-slugs": "node tasks/update-article-slugs.mjs",
     "webhint": "hint http://localhost:8080"
   },
   "devDependencies": {
@@ -25,6 +26,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.3",
     "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
     "@parcel/transformer-svgo": "^2.0.0-beta.1",
+    "@sindresorhus/slugify": "^1.1.0",
     "hint": "^6.1.0",
     "hititipi": "^0.10.0",
     "html-escaper": "^3.0.0",
