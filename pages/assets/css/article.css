@@ -72,6 +72,7 @@ body {
 .main h5,
 .main h6 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  position: relative;
 }
 
 .main h1 {
@@ -149,6 +150,28 @@ blockquote {
 
 blockquote p::before {
   content: '\2015';
+}
+
+.deeplink {
+  --w: 1.4rem;
+  border-radius: calc(var(--w) / 2);
+  float: right;
+  padding: 0 0 0.2rem;
+  text-align: center;
+  width: var(--w);
+}
+
+@media (min-width: 45rem) {
+  .deeplink {
+    left: calc(calc(var(--w) * -1) - 0.5rem);
+    position: absolute;
+    top: 0;
+  }
+}
+
+.deeplink:hover {
+  background-color: #3F3FFF;
+  color: #fff !important;
 }
 
 .edit-link-wrapper {

@@ -1,8 +1,10 @@
 'use strict';
 
-const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-const pluginRss = require('@11ty/eleventy-plugin-rss');
 const emojiReadTime = require('@11tyrocks/eleventy-plugin-emoji-readtime');
+const markdownIt = require('markdown-it');
+const pluginRss = require('@11ty/eleventy-plugin-rss');
+const slugify = require('@sindresorhus/slugify');
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 module.exports = function (eleventyConfig) {
 
@@ -13,6 +15,20 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(emojiReadTime, { showEmoji: false });
+
+  const markdownItAnchor = require('markdown-it-anchor');
+  // https://www.toptal.com/designers/htmlarrows/punctuation/section-sign/
+  const markdownItAnchorOptions = {
+    permalink: true,
+    permalinkClass: 'deeplink',
+    permalinkSymbol: '&#xa7;&#xFE0E;',
+    level: [2, 3, 4],
+    slugify,
+  };
+
+  const md = markdownIt({ html: true })
+    .use(markdownItAnchor, markdownItAnchorOptions);
+  eleventyConfig.setLibrary('md', md);
 
   return {
     dir: {
