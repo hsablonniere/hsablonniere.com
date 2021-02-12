@@ -92,7 +92,7 @@ body {
 }
 
 .elsewhere-link {
-  --size: 1.3rem;
+  --size: 1rem;
   background: no-repeat center center;
   background-size: contain;
   display: block;
@@ -131,6 +131,10 @@ body {
 
 .elsewhere-link[title="Vimeo "] {
   background-image: url(../img/oemiv.svg);
+}
+
+.elsewhere-link[title="Twitch "] {
+  background-image: url(../img/hcitiwt.svg);
 }
 
 .elsewhere-link[title="LinkedIn "] {
