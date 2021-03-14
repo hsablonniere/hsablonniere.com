@@ -47,5 +47,9 @@
     "prismjs-github": "^1.0.0",
     "puppeteer": "^8.0.0",
     "superagent": "^6.1.0"
+  },
+  "volta": {
+    "node": "14.16.0",
+    "npm": "7.6.3"
   }
 }
