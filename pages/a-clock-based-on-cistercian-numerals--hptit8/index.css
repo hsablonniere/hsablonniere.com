@@ -1,0 +1,24 @@
+body {
+  --cistercian-width: 2px;
+}
+
+cistercian-number:defined {
+  color: blue;
+}
+
+cistercian-clock {
+  --cistercian-color-0: #000;
+  --cistercian-color-1: #0019a7dd;
+  --cistercian-color-2: #751056dd;
+  --cistercian-color-3: #007229dd;
+  --cistercian-color-4: #db241fdd;
+  --cistercian-color-5: #fdcd01dd;
+  font-size: min(12em, 35vw);
+  justify-content: center;
+  margin: 0.2em 0;
+}
+
+cistercian-clock[date][no-seconds] {
+  font-size: min(7em, 20vw);
+  margin: 0.4em 0;
+}

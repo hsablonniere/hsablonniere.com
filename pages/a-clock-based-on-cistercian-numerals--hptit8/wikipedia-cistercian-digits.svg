@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		width="10.6403in" height="8.46711in" viewBox="0 0 766.104 609.632" xml:space="preserve" color-interpolation-filters="sRGB"
+		class="st5">
+	<title>The Cipher of the Monks</title>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#ffffff;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st2 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+		.st3 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st4 {fill:#000000;font-family:Calibri;font-size:1.5em}
+		.st5 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g>
+		<g transform="translate(0.375,-0.375)">
+			<rect x="0" y="0.749984" width="765.354" height="608.882" class="st1"/>
+		</g>
+		<g transform="translate(42.8947,-595.084)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(652.527,14.5482) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(14.5482,-471.698)">
+			<desc>1</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="23.78" y="605.03" class="st4">1</text>
+		</g>
+		<g transform="translate(127.934,-565.991)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(737.566,14.5482) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(99.5876,-471.698)">
+			<desc>2</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="23.78" y="605.03" class="st4">2</text>
+		</g>
+		<g transform="translate(644.048,-416.527) rotate(45)">
+			<path d="M0 609.63 L40.09 609.63" class="st2"/>
+		</g>
+		<g transform="translate(822.605,14.5482) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(184.627,-471.698)">
+			<desc>3</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="23.78" y="605.03" class="st4">3</text>
+		</g>
+		<g transform="translate(-133.062,-388.18) rotate(-45)">
+			<path d="M0 609.63 L40.09 609.63" class="st2"/>
+		</g>
+		<g transform="translate(907.645,14.5482) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(269.666,-471.698)">
+			<desc>4</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="23.78" y="605.03" class="st4">4</text>
+		</g>
+		<g transform="translate(383.052,-595.084)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(992.684,14.5482) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(354.706,-471.698)">
+			<desc>5</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="23.78" y="605.03" class="st4">5</text>
+		</g>
+		<g transform="translate(1106.07,14.5482) rotate(90)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1077.72,14.5482) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(439.745,-471.698)">
+			<desc>6</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="23.78" y="605.03" class="st4">6</text>
+		</g>
+		<g transform="translate(553.131,-595.084)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1162.76,14.5482) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(524.784,-471.698)">
+			<desc>7</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="23.78" y="605.03" class="st4">7</text>
+		</g>
+		<g transform="translate(638.17,-566.737)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1247.8,14.5482) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(609.824,-471.698)">
+			<desc>8</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="23.78" y="605.03" class="st4">8</text>
+		</g>
+		<g transform="translate(723.21,-566.737)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1332.84,14.5482) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(694.863,-471.698)">
+			<desc>9</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="23.78" y="605.03" class="st4">9</text>
+		</g>
+		<g transform="translate(-48.0227,-388.18) rotate(-45)">
+			<path d="M0 609.63 L40.09 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1191.11,14.5482) rotate(90)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(56.8849,42.8947) rotate(-90)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(723.21,-595.084)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(141.924,42.8947) rotate(-90)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(14.5482,-439.178)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(652.527,170.454) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(14.5482,-315.792)">
+			<desc>10</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="19.22" y="605.03" class="st4">10</text>
+		</g>
+		<g transform="translate(99.5876,-410.832)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(737.566,170.454) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(99.5876,-315.792)">
+			<desc>20</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="19.22" y="605.03" class="st4">20</text>
+		</g>
+		<g transform="translate(-246.448,-232.275) rotate(-45)">
+			<path d="M0 609.63 L40.09 609.63" class="st2"/>
+		</g>
+		<g transform="translate(822.605,170.454) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(184.627,-315.792)">
+			<desc>30</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="19.22" y="605.03" class="st4">30</text>
+		</g>
+		<g transform="translate(700.741,-260.621) rotate(45)">
+			<path d="M0 609.63 L40.09 609.63" class="st2"/>
+		</g>
+		<g transform="translate(907.645,170.454) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(269.666,-315.792)">
+			<desc>40</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="19.22" y="605.03" class="st4">40</text>
+		</g>
+		<g transform="translate(354.706,-439.178)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(992.684,170.454) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(354.706,-315.792)">
+			<desc>50</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="19.22" y="605.03" class="st4">50</text>
+		</g>
+		<g transform="translate(1049.38,170.454) rotate(90)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1077.72,170.454) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(439.745,-315.792)">
+			<desc>60</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="19.22" y="605.03" class="st4">60</text>
+		</g>
+		<g transform="translate(524.784,-439.178)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1162.76,170.454) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(524.784,-315.792)">
+			<desc>70</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="19.22" y="605.03" class="st4">70</text>
+		</g>
+		<g transform="translate(609.824,-410.832)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1247.8,170.454) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(609.824,-315.792)">
+			<desc>80</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="19.22" y="605.03" class="st4">80</text>
+		</g>
+		<g transform="translate(694.863,-439.178)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1332.84,170.454) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(694.863,-315.792)">
+			<desc>90</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="19.22" y="605.03" class="st4">90</text>
+		</g>
+		<g transform="translate(785.781,-260.621) rotate(45)">
+			<path d="M0 609.63 L40.09 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1134.42,170.454) rotate(90)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1219.46,170.454) rotate(90)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(694.863,-410.832)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(85.2313,198.8) rotate(-90)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(42.8947,-198.233)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(652.527,326.359) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(14.5482,-159.887)">
+			<desc>100</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="14.66" y="605.03" class="st4">100</text>
+		</g>
+		<g transform="translate(14.5482,-42.3278)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(652.527,482.265) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(14.5482,-3.9813)">
+			<desc>1000</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="10.1" y="605.03" class="st4">1000</text>
+		</g>
+		<g transform="translate(127.934,-226.58)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(737.566,326.359) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(99.5876,-159.887)">
+			<desc>200</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="14.66" y="605.03" class="st4">200</text>
+		</g>
+		<g transform="translate(672.395,814.127) rotate(135)">
+			<path d="M0 609.63 L40.09 609.63" class="st2"/>
+		</g>
+		<g transform="translate(822.605,326.359) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(184.627,-159.887)">
+			<desc>300</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="14.66" y="605.03" class="st4">300</text>
+		</g>
+		<g transform="translate(-104.716,842.473) rotate(-135)">
+			<path d="M0 609.63 L40.09 609.63" class="st2"/>
+		</g>
+		<g transform="translate(907.645,326.359) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(269.666,-159.887)">
+			<desc>400</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="14.66" y="605.03" class="st4">400</text>
+		</g>
+		<g transform="translate(-19.6762,842.473) rotate(-135)">
+			<path d="M0 609.63 L40.09 609.63" class="st2"/>
+		</g>
+		<g transform="translate(992.684,326.359) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(354.706,-159.887)">
+			<desc>500</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="14.66" y="605.03" class="st4">500</text>
+		</g>
+		<g transform="translate(-113.194,411.399) rotate(-90)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1077.72,326.359) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(439.745,-159.887)">
+			<desc>600</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="14.66" y="605.03" class="st4">600</text>
+		</g>
+		<g transform="translate(553.131,-198.233)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1162.76,326.359) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(524.784,-159.887)">
+			<desc>700</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="14.66" y="605.03" class="st4">700</text>
+		</g>
+		<g transform="translate(638.17,-226.58)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1247.8,326.359) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(609.824,-159.887)">
+			<desc>800</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="14.66" y="605.03" class="st4">800</text>
+		</g>
+		<g transform="translate(723.21,-226.58)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1332.84,326.359) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(694.863,-159.887)">
+			<desc>900</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="14.66" y="605.03" class="st4">900</text>
+		</g>
+		<g transform="translate(383.052,-198.233)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(-28.1545,411.399) rotate(-90)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1276.15,383.052) rotate(90)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1361.19,383.052) rotate(90)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(723.21,-198.233)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(99.5876,-70.6742)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(737.566,482.265) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(99.5876,-3.9813)">
+			<desc>2000</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="10.1" y="605.03" class="st4">2000</text>
+		</g>
+		<g transform="translate(615.702,107.883) rotate(45)">
+			<path d="M0 609.63 L40.09 609.63" class="st2"/>
+		</g>
+		<g transform="translate(822.605,482.265) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(184.627,-3.9813)">
+			<desc>3000</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="10.1" y="605.03" class="st4">3000</text>
+		</g>
+		<g transform="translate(-161.408,136.229) rotate(-45)">
+			<path d="M0 609.63 L40.09 609.63" class="st2"/>
+		</g>
+		<g transform="translate(907.645,482.265) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(269.666,-3.9813)">
+			<desc>4000</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="10.1" y="605.03" class="st4">4000</text>
+		</g>
+		<g transform="translate(354.706,-42.3278)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(992.684,482.265) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(354.706,-3.9813)">
+			<desc>5000</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="10.1" y="605.03" class="st4">5000</text>
+		</g>
+		<g transform="translate(-169.887,567.304) rotate(-90)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1077.72,482.265) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(439.745,-3.9813)">
+			<desc>6000</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="10.1" y="605.03" class="st4">6000</text>
+		</g>
+		<g transform="translate(524.784,-42.3278)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1162.76,482.265) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(524.784,-3.9813)">
+			<desc>7000</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="10.1" y="605.03" class="st4">7000</text>
+		</g>
+		<g transform="translate(609.824,-70.6742)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1247.8,482.265) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(609.824,-3.9813)">
+			<desc>8000</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="10.1" y="605.03" class="st4">8000</text>
+		</g>
+		<g transform="translate(694.863,-42.3278)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1332.84,482.265) rotate(90)">
+			<path d="M0 609.63 L85.04 609.63" class="st2"/>
+		</g>
+		<g transform="translate(694.863,-3.9813)">
+			<desc>9000</desc>
+			<rect x="0" y="589.632" width="56.6929" height="20" class="st3"/>
+			<text x="10.1" y="605.03" class="st4">9000</text>
+		</g>
+		<g transform="translate(-76.3691,136.229) rotate(-45)">
+			<path d="M0 609.63 L40.09 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1134.42,538.958) rotate(90)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1219.46,538.958) rotate(90)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(694.863,-70.6742)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+		<g transform="translate(1304.5,538.958) rotate(90)">
+			<path d="M0 609.63 L28.35 609.63" class="st2"/>
+		</g>
+	</g>
+</svg>

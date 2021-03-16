@@ -14,6 +14,7 @@
     "clear": "rm -rf _site dist .parcel-cache",
     "create-article": "node tasks/create-article.mjs",
     "generate:page-images": "node tasks/generate-page-images.mjs",
+    "postinstall": "(cd pages/a-clock-based-on-cistercian-numerals--hptit8 && npm i)",
     "cross-post": "node tasks/cross-post.mjs",
     "serve": "eleventy --config config/.eleventy.js --serve",
     "start": "node start-server.mjs",

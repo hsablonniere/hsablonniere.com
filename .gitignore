@@ -5,3 +5,7 @@ _site
 dist
 hint-report
 node_modules
+# Prevent eleventy from reading HTML, JSON or MD files from pages dependencies
+pages/**/node_modules/**/*.html
+pages/**/node_modules/**/*.json
+pages/**/node_modules/**/*.md
