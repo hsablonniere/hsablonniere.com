@@ -58,7 +58,7 @@ body {
   box-sizing: border-box;
   font-family: "Iowan Old Style", Palatino Linotype, Palatino, Georgia, serif;
   margin: auto;
-  max-width: 35rem;
+  max-width: 40rem;
   /* cheap trick for a sticky footer but I didn't like other solutions  */
   min-height: 75vh;
   padding: 1rem;
