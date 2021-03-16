@@ -15,6 +15,9 @@
   {% for stylesheetPath in stylesheets %}
   <link rel="stylesheet" href="{{ stylesheetPath }}">
   {% endfor %}
+  {% for scriptPath in scripts %}
+  <script type="module" src="{{ scriptPath }}"></script>
+  {% endfor %}
 </head>
 <body>
 <header class="header-wrapper">
