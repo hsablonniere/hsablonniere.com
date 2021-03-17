@@ -49,19 +49,22 @@ async function updateDevto (localArticleList) {
     const remoteArticle = remoteArticleList.find((a) => a.canonical_url === localArticle.canonicalUrl);
 
     const frontMatter = ['---', `date: ${localArticle.date.replace(/-/g, '').slice(0, 8)}`, '---'].join('\n');
-    const devtoContent = frontMatter + '\n' + localArticle.content;
+    // TODO: could be done properly with PostHTML
+    const devtoContent = localArticle.content.replace(/^.*<\/h1>/ms, frontMatter);
 
     // For debug purposes
     const debugFilepath = path.join(CROSS_POST_DIR, localArticle.fileSlug + '.devto.html');
     fs.writeFileSync(debugFilepath, devtoContent);
 
     const articleBody = {
-      title: localArticle.title,
-      // main_image: '',
-      body_markdown: devtoContent,
-      canonical_url: localArticle.canonicalUrl,
-      description: localArticle.description,
-      tags: [],
+      article: {
+        title: localArticle.title,
+        // main_image: '',
+        body_markdown: devtoContent,
+        canonical_url: localArticle.canonicalUrl,
+        description: localArticle.description,
+        tags: [],
+      },
     };
 
     if (remoteArticle == null) {
