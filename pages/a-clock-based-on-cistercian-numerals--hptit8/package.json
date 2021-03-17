@@ -1,0 +1,7 @@
+{
+  "name": "a-cistercian-numerals-based-clock--hptit8",
+  "private": true,
+  "dependencies": {
+    "cistercian-numerals": "^1.1.0"
+  }
+}

@@ -75,6 +75,7 @@ export function csp (options = {}) {
     const cspHeader = [
       `default-src 'none'`,
       `style-src 'self' 'unsafe-inline'`,
+      `script-src 'self'`,
       `img-src 'self'`,
       `media-src 'self'`,
       `manifest-src 'self'`,

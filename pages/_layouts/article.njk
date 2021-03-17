@@ -15,6 +15,9 @@
   {% for stylesheetPath in stylesheets %}
   <link rel="stylesheet" href="{{ stylesheetPath }}">
   {% endfor %}
+  {% for scriptPath in scripts %}
+  <script type="module" src="{{ scriptPath }}"></script>
+  {% endfor %}
 </head>
 <body>
 <header class="header-wrapper">
@@ -23,7 +26,7 @@
 </header>
 <article class="main" role="main">
   <h1>{{ title | safe }}</h1>
-  <div class="publication-date">Published on {{ formattedDate }} ・ {{ content | emojiReadTime }}</div>
+  <div class="publication-date">Published on {{ formattedDate }} · {{ content | emojiReadTime }}</div>
   {{ content | safe }}
   <div class="edit-link-wrapper">
     <a href="{{ githubEditUrl }}">Edit this article on GitHub</a>

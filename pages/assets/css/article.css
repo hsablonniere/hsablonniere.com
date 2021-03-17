@@ -58,7 +58,7 @@ body {
   box-sizing: border-box;
   font-family: "Iowan Old Style", Palatino Linotype, Palatino, Georgia, serif;
   margin: auto;
-  max-width: 35rem;
+  max-width: 40rem;
   /* cheap trick for a sticky footer but I didn't like other solutions  */
   min-height: 75vh;
   padding: 1rem;
@@ -76,6 +76,7 @@ body {
 }
 
 .main h1 {
+  font-size: 2em;
   line-height: 1.25;
   margin-bottom: 0.5rem;
 }
@@ -149,7 +150,7 @@ blockquote {
 }
 
 blockquote p::before {
-  content: '\2015';
+  content: '\2015  ';
 }
 
 .deeplink {
