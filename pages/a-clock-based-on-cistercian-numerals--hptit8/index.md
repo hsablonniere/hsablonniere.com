@@ -167,8 +167,11 @@ Please see the [README](https://github.com/hsablonniere/cistercian-numerals/blob
 * [LitElement](https://lit-element.polymer-project.org/), the library I used to build the Web Components
 * [Web Dev Server](https://modern-web.dev/docs/dev-server/overview/), the dev server I use for live preview
 * [Cistercian SVG](https://adrianroselli.com/2021/02/cistercian-svg.html) by Adrian Roselli 
-* [React based experiment](https://twitter.com/aqandrew/status/1349762018639638528) by Andrew Aquino
-* [React based experiment](https://mz8i.com/cistercian) by Maciej Ziarkowski
+* [p5js based cistercian clock](https://ednl.github.io/cistercian-clock/?size=80) by E. Dronkert
+* [Arduino + dot matrix cistercian clock](https://hackaday.io/project/178131-monklock) by Danjovic
+* [Smart watch face cistercian clock](https://getwatchmaker.com/watchface/cistercian-clock) by Philip McGeehan
+* [React based cistercian number component](https://twitter.com/aqandrew/status/1349762018639638528) by Andrew Aquino
+* [React based cistercian number component](https://mz8i.com/cistercian) by Maciej Ziarkowski
 * [Clairvo](https://github.com/TiroTypeworks/Clairvo), a proof-of-concept font that uses OpenType Layout to implement Cistercian numerals
 
 ## Thank you
