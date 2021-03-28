@@ -29,7 +29,7 @@
     "@parcel/transformer-svgo": "^2.0.0-beta.1",
     "@sindresorhus/slugify": "^1.1.0",
     "hint": "^6.1.3",
-    "hititipi": "^0.10.0",
+    "hititipi": "^0.11.0",
     "html-escaper": "^3.0.3",
     "markdown-it": "^12.0.4",
     "markdown-it-anchor": "^7.1.0",
