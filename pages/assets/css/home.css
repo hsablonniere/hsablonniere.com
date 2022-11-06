@@ -84,22 +84,22 @@ body {
 .elsewhere {
   align-items: center;
   display: flex;
+  gap: 1em;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
-  justify-content: center;
+  justify-content: start;
 }
 
 .elsewhere-link {
-  --size: 1rem;
+  --size: 1.5rem;
   background: no-repeat center center;
   background-size: contain;
   display: block;
   filter: grayscale(100%);
   font-size: 0;
   height: var(--size);
-  margin: 0.5rem;
   width: var(--size);
 }
 
@@ -111,6 +111,10 @@ body {
 
 .elsewhere-link[title="Twitter "] {
   background-image: url(../img/rettiwt.svg);
+}
+
+.elsewhere-link[title="Mastodon "] {
+  background-image: url(../img/mastodon.svg);
 }
 
 .elsewhere-link[title^="RSS "] {
@@ -143,6 +147,10 @@ body {
 
 .elsewhere-link[title="Sens Critique "] {
   background-image: url(../img/euqitircsnes.svg);
+}
+
+.elsewhere-link[title="Letterboxd "] {
+  background-image: url(../img/letterboxd.svg);
 }
 
 .elsewhere-link[title="Soundcloud "] {
