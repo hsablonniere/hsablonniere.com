@@ -1,40 +1,13 @@
 import fs from 'fs';
 import path from 'path';
-import { transformHtml } from '../lib/html.mjs';
 import * as devto from '../lib/devto.mjs';
 import * as medium from '../lib/medium.mjs';
+import dedent from 'dedent';
+import { transformHtml } from '../lib/html.mjs';
 
 const { DEV_TO_API_KEY, MEDIUM_ACCESS_TOKEN } = process.env;
 const CROSS_POST_DIR = '.cross-post';
 const ORIGIN = 'https://www.hsablonniere.com';
-
-async function run () {
-
-  // For debug purposes
-  try {
-    fs.mkdirSync(CROSS_POST_DIR);
-  }
-  catch (e) {
-  }
-
-  // Reading articles collection from Eleventy
-  const collectionsJson = fs.readFileSync('_site/.collections.json', 'utf8');
-  const collections = JSON.parse(collectionsJson);
-  const localArticleList = collections.article;
-
-  for (const localArticle of localArticleList) {
-
-    // Reading articles from dist so we have the "production" HTML with hashed filenames in URLs
-    const distPath = localArticle.outputPath.replace('_site/', 'dist/');
-    const html = fs.readFileSync(distPath, 'utf8');
-
-    localArticle.content = await transformHtml(html);
-    localArticle.canonicalUrl = ORIGIN + localArticle.url;
-  }
-
-  await updateDevto(localArticleList);
-  await updateMedium(localArticleList);
-};
 
 async function updateDevto (localArticleList) {
 
@@ -48,34 +21,43 @@ async function updateDevto (localArticleList) {
 
     const remoteArticle = remoteArticleList.find((a) => a.canonical_url === localArticle.canonicalUrl);
 
-    const frontMatter = ['---', `date: ${localArticle.date.replace(/-/g, '').slice(0, 8)}`, '---'].join('\n');
-    // TODO: could be done properly with PostHTML
-    const devtoContent = localArticle.content.replace(/^.*<\/h1>/ms, frontMatter);
+    const frontMatter = dedent`
+      ---
+      date: ${localArticle.date.replace(/-/g, '').slice(0, 8)}
+      ---
+    `;
+    const contentDevto = await transformHtml(localArticle.contentProduction, {
+      videos: true,
+    });
+    const content = frontMatter + '\n' + contentDevto;
 
     // For debug purposes
     const debugFilepath = path.join(CROSS_POST_DIR, localArticle.fileSlug + '.devto.html');
-    fs.writeFileSync(debugFilepath, devtoContent);
+    fs.writeFileSync(debugFilepath, content);
 
     const articleBody = {
       article: {
         title: localArticle.title,
+        body_markdown: content,
         // main_image: '',
-        body_markdown: devtoContent,
         canonical_url: localArticle.canonicalUrl,
         description: localArticle.description,
         tags: [],
       },
     };
 
+    // This helps the Dev.to API ;-)
+    // await setTimeout(1000);
+
     if (remoteArticle == null) {
       console.log(`  => does not exist yet`);
-      await devto.createArticle(DEV_TO_API_KEY, articleBody);
+      //   await devto.createArticle(DEV_TO_API_KEY, articleBody);
       console.log(`  => created successfully!`);
     }
     else {
       console.log(`  => already exists`);
-      // TODO, we may use the same system as medium.com to prevent too many calls to dev.to's API
-      await devto.updateArticle(DEV_TO_API_KEY, articleBody, remoteArticle.id);
+      //   // TODO, we may use the same system as medium.com to prevent too many calls to dev.to's API
+      //   await devto.updateArticle(DEV_TO_API_KEY, articleBody, remoteArticle.id);
       console.log(`  => updated successfully!`);
     }
   }
@@ -94,17 +76,17 @@ async function updateMedium (localArticleList) {
     const remoteArticle = remoteArticleList.find((a) => a.canonicalUrl === localArticle.canonicalUrl);
 
     const crossPostBanner = `<p>ℹ️ INFO: <em>This article was originally posted <a href="${localArticle.canonicalUrl}">on my own site</a>.</em></p>`;
-    // TODO: could be done properly with PostHTML
-    const mediumContent = localArticle.content.replace('</h1>', '</h1>' + crossPostBanner);
+    const contentMedium = await transformHtml(localArticle.contentProduction);
+    const content = crossPostBanner + '\n' + contentMedium;
 
     // For debug purposes
     const debugFilepath = path.join(CROSS_POST_DIR, localArticle.fileSlug + '.mediumcom.html');
-    fs.writeFileSync(debugFilepath, mediumContent);
+    fs.writeFileSync(debugFilepath, content);
 
     const articleBody = {
       title: localArticle.title,
       contentFormat: 'markdown',
-      content: mediumContent,
+      content: content,
       canonicalUrl: localArticle.canonicalUrl,
       tags: [],
       publishStatus: 'draft',
@@ -124,13 +106,28 @@ async function updateMedium (localArticleList) {
       const { articleId } = await medium.updateArticle(MEDIUM_ACCESS_TOKEN, articleBody, articleBodyChecksum);
       console.log(`  => already exists but remote version is stale, manual copy/paste is required`);
       console.log(`  => Draft to copy: https://medium.com/p/${articleId}/edit`);
-      console.log(`  => Published article to edit: https://medium.com/p/${remoteArticle.id}/edit`);
+      console.log(`  => Published article to edit: https://medium.com/p/${remoteArticle.articleId}/edit`);
     }
   }
 }
 
-run()
-  .catch((e) => {
-    console.error(e);
-    process.exit(1);
-  });
+// For debug purposes
+fs.mkdirSync(CROSS_POST_DIR, { recursive: true });
+
+// Reading articles collection from Eleventy
+const collectionsJson = fs.readFileSync('_site/.collections.json', 'utf8');
+const collections = JSON.parse(collectionsJson);
+const localArticleList = collections.article;
+
+for (const localArticle of localArticleList) {
+
+  // Reading articles from dist so we have the "production" HTML with hashed filenames in URLs
+  const distPath = localArticle.outputPath.replace('_site/', 'dist/');
+  const html = fs.readFileSync(distPath, 'utf8');
+
+  localArticle.contentProduction = html;
+  localArticle.canonicalUrl = ORIGIN + localArticle.url;
+}
+
+await updateDevto(localArticleList);
+// await updateMedium(localArticleList);

@@ -1,27 +1,36 @@
+// Default parcel config contains lots of stuffs: https://github.com/parcel-bundler/parcel/blob/v2/packages/configs/default/index.json
+// We want to know and control what happens!
 {
   "transformers": {
-    "*.html": ["parcel-transformer-html-inline-css", "@parcel/transformer-html", "parcel-transformer-html-og"],
-    "*-feed.xml": ["parcel-transformer-atom-feed"],
-    "*.txt": ["parcel-transformer-noop"],
-    "*manifest.json": ["parcel-transformer-manifest"],
+    "*.html": [
+      "./parcel-plugins/parcel-transformer-html-inline-css.mjs",
+      "@parcel/transformer-html",
+      "./parcel-plugins/parcel-transformer-html-og.mjs"
+    ],
+    "*-feed.xml": ["./parcel-plugins/parcel-transformer-atom-feed.mjs"],
     "*.css": ["@parcel/transformer-css"],
-    "*.svg": ["@parcel/transformer-svgo"],
-    "*.jpg": ["parcel-transformer-mozjpeg"],
-    "*.png": ["parcel-transformer-pngquant"],
+    "webmanifest:*": ["@parcel/transformer-webmanifest"],
     "*": ["@parcel/transformer-raw"]
   },
   "resolvers": ["@parcel/resolver-default"],
   "bundler": "@parcel/bundler-default",
-  "namers": ["parcel-namer-preserve-structure"],
+  "namers": ["./parcel-plugins/parcel-namer-preserve-structure.mjs"],
   "packagers": {
     "*.html": "@parcel/packager-html",
     "*-feed.xml": "@parcel/packager-raw-url",
     "*.css": "@parcel/packager-css",
-    "*manifest.*.json": "@parcel/packager-raw-url",
+    "*.webmanifest": "@parcel/packager-raw-url",
     "*": "@parcel/packager-raw"
   },
   "optimizers": {
-    "*.css": ["@parcel/optimizer-cssnano"]
+    "*.css": ["@parcel/optimizer-cssnano"],
+    "*.svg": ["@parcel/optimizer-svgo"],
+    "*.{jpg,jpeg,png}": ["@parcel/optimizer-image"]
   },
-  "reporters": ["@parcel/reporter-cli"]
+  // We don't want to use "@parcel/compressor-gzip" and "@parcel/compressor-brotli".
+  // => they cannot automatically detect which file need compression
+  // => the gzip one is done with regular zlib (and not zopfli)
+  "compressors": {
+    "*": ["@parcel/compressor-raw"]
+  }
 }

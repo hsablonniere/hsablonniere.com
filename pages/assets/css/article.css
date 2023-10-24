@@ -153,26 +153,15 @@ blockquote p::before {
   content: '\2015  ';
 }
 
-.deeplink {
-  --w: 1.4rem;
-  border-radius: calc(var(--w) / 2);
-  float: right;
-  padding: 0 0 0.2rem;
-  text-align: center;
-  width: var(--w);
+a.header-anchor,
+a.header-anchor:visited {
+  color: #000;
+  text-decoration: none;
 }
 
-@media (min-width: 45rem) {
-  .deeplink {
-    left: calc(calc(var(--w) * -1) - 0.5rem);
-    position: absolute;
-    top: 0;
-  }
-}
-
-.deeplink:hover {
-  background-color: #3F3FFF;
-  color: #fff !important;
+a.header-anchor:focus,
+a.header-anchor:hover {
+  text-decoration: underline;
 }
 
 .edit-link-wrapper {

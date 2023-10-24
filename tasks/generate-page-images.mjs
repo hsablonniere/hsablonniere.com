@@ -2,13 +2,13 @@ import fs from 'fs';
 import path from 'path';
 import puppeteer from 'puppeteer';
 
-// This script assumes you're runnin Eleventy in dev mode on port 8080
+// This script assumes you're running Eleventy in dev mode on port 8080
 const port = 8080;
 
 // List all pages
 const collectionsJson = fs.readFileSync('_site/.collections.json', 'utf8');
 const collections = JSON.parse(collectionsJson);
-const pageList = Object.values(collections).flatMap((a) => a);
+const pageList = Object.values(collections).flat();
 
 async function generatePageImage (puppeteerPage, port, page) {
 
@@ -46,25 +46,18 @@ async function generatePageImage (puppeteerPage, port, page) {
   console.log('>', feedImagePath, 'DONE!');
 }
 
-async function run ({ port, pageList }) {
+// Start browser and init puppeteerPage
+const browser = await puppeteer.launch({
+  headless: 'new',
+});
+const puppeteerPage = await browser.newPage();
 
-  // Start browser and init puppeteerPage
-  const browser = await puppeteer.launch();
-  const puppeteerPage = await browser.newPage();
+console.log('Generating images for articles...');
 
-  console.log('Generating images for articles...');
+for (const page of pageList) {
+  await generatePageImage(puppeteerPage, port, page);
+}
 
-  for (const page of pageList) {
-    await generatePageImage(puppeteerPage, port, page);
-  }
+console.log('ALL DONE');
 
-  await browser.close();
-
-  console.log('ALL DONE');
-};
-
-run({ port, pageList })
-  .catch((e) => {
-    console.error(e);
-    process.exit(1);
-  });
+browser.close();

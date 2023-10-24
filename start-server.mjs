@@ -126,7 +126,8 @@ async function run () {
             xXssProtection({ enabled: true, blockMode: true }),
             csp(),
             (context) => {
-              return isHtml(context.responseHeaders['content-type'])
+              const isWebmanifest = context.requestUrl.pathname === '/manifest.webmanifest';
+              return isHtml(context.responseHeaders['content-type']) || isWebmanifest
                 ? cacheControl({ 'max-age': 180 })
                 : cacheControl({ 'max-age': ONE_YEAR, immutable: true });
             },

@@ -85,50 +85,64 @@ I also read many articles from developers' own personal blogs.
 Many of them inspired me to write and start a blog.
 Here are a few that come to mind:
 
-### ![](favicon-jake-archibald.png) [Jake Archibald](https://jakearchibald.com/)
+### ![](favicon-jake-archibald.png) Jake Archibald
 
 Jake has articles with [animated SVGs](https://jakearchibald.com/2014/offline-cookbook/), how awesome is that?
 More seriously, I really like his tone.
 He has a tendency to dig deep into a subject which always makes a [fascinating reading](https://jakearchibald.com/2018/i-discovered-a-browser-bug/) in the end.
 
-### ![](favicon-jeremy-keith.png) [Jeremy Keith](https://adactio.com/)
+[jakearchibald.com](https://jakearchibald.com)
+
+### ![](favicon-jeremy-keith.png) Jeremy Keith
 
 Jeremy is a strong advocate of progressive enhancement and the [IndieWeb](https://indieweb.org/).
 His [articles](https://adactio.com/journal/7706) often have a touch of wisdom I appreciate a lot.
 His site is one of the best examples of the IndieWeb I know and it gives me a lot of inspiration on how to publish and share my content.
 
-### ![](favicon-lea-verou.svg) [Lea Verou](https://lea.verou.me/)
+[adactio.com](https://adactio.com)
+
+### ![](favicon-lea-verou.svg) Lea Verou
 
 Just like CSS, Lea is awesome!
 She has a strong voice and I admire her for that.
 Over the years, she shared many great projects and [interesting articles](https://lea.verou.me/2020/04/lch-colors-in-css-what-why-and-how/).
 Reading her work is always a good investment of my time.
 
-### ![](favicon-remy-sharp.png) [Remy Sharp](https://remysharp.com/)
+[lea.verou.me](https://lea.verou.me)
+
+### ![](favicon-remy-sharp.png) Remy Sharp
 
 Remy shares my enthusiasm for [crazy experiments with Web Audio](https://www.youtube.com/watch?v=lQMcZtiaD0A).
 I read many of [his articles](https://remysharp.com/2020/07/15/a-px-is-not-a-px) and like Jeremy, he shares links and notes on his site.
 He's also the one with the [Christmas movie suggestions](https://remysharp.com/2010/11/29/our-christmas-films-list) every year.
 
-### ![](favicon-nicolas-martignole.png) [Nicolas Martignole](https://www.touilleur-express.fr/)
+[remysharp.com](https://remysharp.com)
+
+### ![](favicon-nicolas-martignole.png) Nicolas Martignole
 
 When I started my career, I was doing a lot of Java and Nicolas Martignole's blog, _"Le Touilleur Express"_, was the first one I followed thoroughly.
 With the passing years, he started writing about less technical topics like [managing developers](http://www.touilleur-express.fr/2018/10/16/gerer-developpeurs/) or [being a senior developer](http://www.touilleur-express.fr/2009/07/27/senior/).
 Always interesting.
 
-### ![](favicon-nicolas-hoizey.jpg) [Nicolas Hoizey](https://nicolas-hoizey.com/)
+[touilleur-express.fr](https://www.touilleur-express.fr)
+
+### ![](favicon-nicolas-hoizey.jpg) Nicolas Hoizey
 
 When it comes to the IndieWeb, I could describe Nicolas Hoizey as "the French Jeremy Keith".
 Like Jeremy, he follows the [POSSE](https://indieweb.org/POSSE) principle and the structure of his site is a great source of inspiration for me.
 I learned a lot by looking at his [GitHub repo](https://github.com/nhoizey/nicolas-hoizey.com) to see how he built and configured everything.
 He wrote a great deal of really good articles, you probably already read the one about [viewport height](https://nicolas-hoizey.com/articles/2015/02/18/viewport-height-is-taller-than-the-visible-part-of-the-document-in-some-mobile-browsers/).
 
-### ![](favicon-boris-schapira.png) [Boris Schapira](https://boris.schapira.dev/)
+[nicolas-hoizey.com](https://nicolas-hoizey.com)
+
+### ![](favicon-boris-schapira.png) Boris Schapira
 
 Boris writes about the Web, but he also writes about politics, citizenship and being a dad.
 I'm not sure I'm ready to step out of my confort zone on this, but he is an inspiration.
 He often writes [about webperf](https://boris.schapira.dev/notes/2020-09-cumulative-layout-shift-visual-instability/) and when he does, it's 0% devrel BS and 100% from the field.
 Like Nicolas Hoizey, I often look at his [GitHub repo](https://github.com/borisschapira/boris.schapira.dev) to see how he built and configured his site. 
+
+[boris.schapira.dev](https://boris.schapira.dev)
 
 ## 🛠️ The stack
 

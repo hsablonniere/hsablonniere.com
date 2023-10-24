@@ -2,32 +2,35 @@
 
 const emojiReadTime = require('@11tyrocks/eleventy-plugin-emoji-readtime');
 const markdownIt = require('markdown-it');
+const markdownItAnchor = require('markdown-it-anchor');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const slugify = require('@sindresorhus/slugify');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 module.exports = function (eleventyConfig) {
 
+  // Copy static assets
   eleventyConfig.addPassthroughCopy('pages/**/*.{jpg,png,gif,svg,ico,css,mp4,txt,json,js}');
 
+  // Syntax highlighting...
   eleventyConfig.addPlugin(syntaxHighlight);
+  // with GitHub theme (via prismjs)
   eleventyConfig.addPassthroughCopy({ 'node_modules/prismjs-github/scheme.css': 'assets/css/prismjs-github.css' });
 
+  // Generate an RSS feedn
   eleventyConfig.addPlugin(pluginRss);
+
+  // Add an estimated reading time
   eleventyConfig.addPlugin(emojiReadTime, { showEmoji: false });
 
-  const markdownItAnchor = require('markdown-it-anchor');
-  // https://www.toptal.com/designers/htmlarrows/punctuation/section-sign/
-  const markdownItAnchorOptions = {
-    permalink: true,
-    permalinkClass: 'deeplink',
-    permalinkSymbol: '&#xa7;&#xFE0E;',
-    level: [2, 3, 4],
-    slugify,
-  };
-
   const md = markdownIt({ html: true })
-    .use(markdownItAnchor, markdownItAnchorOptions);
+    // Add anchors to headings
+    .use(markdownItAnchor, {
+      permalink: markdownItAnchor.permalink.headerLink(),
+      level: [2, 3, 4],
+      slugify,
+    });
+
   eleventyConfig.setLibrary('md', md);
 
   return {
