@@ -51,13 +51,13 @@ async function updateDevto (localArticleList) {
 
     if (remoteArticle == null) {
       console.log(`  => does not exist yet`);
-      //   await devto.createArticle(DEV_TO_API_KEY, articleBody);
+      await devto.createArticle(DEV_TO_API_KEY, articleBody);
       console.log(`  => created successfully!`);
     }
     else {
       console.log(`  => already exists`);
       //   // TODO, we may use the same system as medium.com to prevent too many calls to dev.to's API
-      //   await devto.updateArticle(DEV_TO_API_KEY, articleBody, remoteArticle.id);
+      await devto.updateArticle(DEV_TO_API_KEY, articleBody, remoteArticle.id);
       console.log(`  => updated successfully!`);
     }
   }
@@ -130,4 +130,4 @@ for (const localArticle of localArticleList) {
 }
 
 await updateDevto(localArticleList);
-// await updateMedium(localArticleList);
+await updateMedium(localArticleList);
