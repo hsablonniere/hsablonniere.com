@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import puppeteer from 'puppeteer';
+import { setTimeout } from 'timers/promises';
 
 // This script assumes you're running Eleventy in dev mode on port 8080
 const port = 8080;
@@ -17,6 +18,8 @@ async function generatePageImage (puppeteerPage, port, page) {
   console.log(url, '...');
 
   await puppeteerPage.goto(url);
+
+  await setTimeout(1000);
 
   // Remove all styles
   const result = await puppeteerPage.evaluate(x => {
