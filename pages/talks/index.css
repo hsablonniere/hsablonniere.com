@@ -1,0 +1,7 @@
+img {
+  height: 9em;
+  width: 16em;
+  object-fit: contain;
+  background-color: #000;
+  margin-left: 0 !important;
+}

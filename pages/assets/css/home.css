@@ -64,8 +64,16 @@ body {
   width: 100%;
 }
 
+.main section {
+  margin-bottom: 2em;
+}
+
 .main p {
   margin: 0.75rem 0;
+}
+
+.main ul {
+  margin: 0.5em 0;
 }
 
 .main a,

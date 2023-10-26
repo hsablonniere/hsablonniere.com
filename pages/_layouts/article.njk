@@ -26,10 +26,12 @@
 </header>
 <article class="main" role="main">
   <h1>{{ title | safe }}</h1>
-  <div class="publication-date">Published on {{ formattedDate }} · {{ content | emojiReadTime }}</div>
+  {% if noDateAndReadingTime != true %}
+    <div class="publication-date">Published on {{ formattedDate }} · {{ content | emojiReadTime }}</div>
+  {% endif %}
   {{ content | safe }}
   <div class="edit-link-wrapper">
-    <a href="{{ githubEditUrl }}">Edit this article on GitHub</a>
+    <a href="{{ githubEditUrl }}">Edit this page on GitHub</a>
   </div>
 </article>
 <footer class="footer">© Hubert Sablonnière</footer>
