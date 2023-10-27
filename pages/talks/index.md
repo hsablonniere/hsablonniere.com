@@ -14,7 +14,7 @@ Here's a list of the conference talks I gave over the past few years.
 ## Compression on the Web: how do we (re)take control?
 <!--## La compression Web : comment (re)prendre le contrôle ?-->
 
-![](talk-compression.png)
+![](talk-compression.jpg)
 
 This talk was co-presented with [Antoine Caron](https://blog.slashgear.dev).
 
@@ -23,7 +23,7 @@ No video yet.
 ## #BackToBasics: HTTP cache
 <!--## #RetourAuxSources : Le cache HTTP-->
 
-![](talk-cache.png)
+![](talk-cache.jpg)
 
 * 📺 [DevFest Lille 2023 (french)](https://www.youtube.com/watch?v=Tfag9MPb6YM)
 * 📺 [Devoxx France 2023 (french)](https://www.youtube.com/watch?v=AJT5EJP_QmQ)
@@ -33,7 +33,7 @@ No video yet.
 ## In this jungle of JavaScript tools, is a return to simplicity still possible?
 <!--## Dans cette jungle de l’outillage JavaScript, un retour à la simplicité est-il encore possible ?-->
 
-![](talk-js-tooling.png)
+![](talk-js-tooling.jpg)
 
 * 📺 [WeLoveSpeed 2021 (french)](https://www.youtube.com/watch?v=5tz5AqRbez8)
 * 📺 [Devoxx France 2021 (french)](https://www.youtube.com/watch?v=t52gxrBGAIQ)
@@ -41,7 +41,7 @@ No video yet.
 ## The Web, its frameworks and its standards: deconstructing them for a more resilient code base
 <!--## Le Web, ses frameworks et ses standards : déconstruire pour mieux (re?)construire-->
 
-![](talk-web-fwk-standards.png)
+![](talk-web-fwk-standards.jpg)
 
 * 📺 [DevFest Nantes 2019 (french)](https://www.youtube.com/watch?v=HEELMZ29GwQ)
 * 📺 [DevFest Lille 2019 (french)](https://www.youtube.com/watch?v=3HW2k15R55A)
@@ -52,7 +52,7 @@ No video yet.
 ## #BackToBasics: HTTP Cookies
 <!--## #RetourAuxSources : Les cookies HTTP-->
 
-![](talk-cookies.png)
+![](talk-cookies.jpg)
 
 * 📺 [DevFest Toulouse 2018 (french)](https://www.youtube.com/watch?v=CcTbecZ67_o)
 * 📺 [Devoxx Belgium 2018 (english)](https://www.youtube.com/watch?v=y6mwekHkgVQ)
@@ -65,7 +65,7 @@ No video yet.
 ## An ultrasonic adventure!
 <!--## Une aventure ultrasonique !-->
 
-![](talk-ultrasonic-adventure.png)
+![](talk-ultrasonic-adventure.jpg)
 
 * 📺 [Devoxx Belgium 2017 (english)](https://www.youtube.com/watch?v=g9ti7uHjqvc)
 * 📺 [Devoxx UK 2017 (english)](https://www.youtube.com/watch?v=O447hZomoT0)
@@ -74,7 +74,7 @@ No video yet.
 ## Documentation as code (explained to my dad)
 <!--## Documentation as Code (expliqué à mon père)-->
 
-![](talk-docs-as-code.png)
+![](talk-docs-as-code.jpg)
 
 * 📺 [Devoxx Belgium 2017 (english)](https://www.youtube.com/watch?v=ggBv_pZDu0c)
 * 📺 [DevFest Nantes 2017 (french)](https://www.youtube.com/watch?v=T6YJlaY0Dpw)
@@ -83,7 +83,7 @@ No video yet.
 ## 100% Stateless with JWT
 <!--## 100% Stateless avec JWT-->
 
-![](talk-jwt.png)
+![](talk-jwt.jpg)
 
 * 📺 [Devoxx Belgium 2016 (english)](https://www.youtube.com/watch?v=67mezK3NzpU)
 * 📺 [BDX.io 2016 (french)](https://www.youtube.com/watch?v=ILKzajWgSC0)
@@ -92,7 +92,7 @@ No video yet.
 ## Make CSS Fun Again with Flexbox!
 <!--## Flexbox, et le CSS redevient fun !-->
 
-![](talk-flexbox.png)
+![](talk-flexbox.jpg)
 
 * 📺 [Devoxx Belgium 2016 (english)](https://www.youtube.com/watch?v=1oKlYgsnyfw)
 * 📺 [Devoxx France 2016 (french)](https://www.youtube.com/watch?v=5F_ngjHDcJQ)
@@ -116,7 +116,7 @@ It was a really fun experience!
 ## From Jurassic Web to offline-first and more with Service Workers
 <!--## La révolution hors-ligne du Web arrive avec les Service Workers-->
 
-![](talk-service-workers.png)
+![](talk-service-workers.jpg)
 
 My friends and my ISP try to convince me that we're all connected.
 It's a lie.
@@ -133,7 +133,7 @@ come along.
 ## CSS for newbies
 <!--## CSS pour les nuls-->
 
-![](talk-css-for-newbies.png)
+![](talk-css-for-newbies.jpg)
 
 CSS is not a only a language for designers.
 You can have really bad taste for colors and style and still learn how to place rectangles on a screen.
@@ -146,7 +146,7 @@ This is a quick live coding session covering the very basics of CSS: display, bo
 ## Recipes for a multi-screen Web
 <!--## Les recettes du web multi-écran-->
 
-![](talk-multi-screen.png)
+![](talk-multi-screen.jpg)
 
 Working with a dual screen setup is not longer reserved to elites like developers or designers.
 Web applications can offer multi-screen user experience.
@@ -160,7 +160,7 @@ There's a lot of good ergonomics reasons and a few interesting techniques to dis
 ## git++: Let's go to the next level of version management
 <!--## git++ : Passez au niveau supérieur de la gestion de version-->
 
-![](talk-git.png)
+![](talk-git.jpg)
 
 This talk was co-presented with [Cyril Lakech](https://twitter.com/cyril_lakech).
 
