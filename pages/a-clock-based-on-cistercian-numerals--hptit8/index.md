@@ -164,12 +164,13 @@ Please see the [README](https://github.com/hsablonniere/cistercian-numerals/blob
   * [Source code for &lt;cistercian-clock&gt;](https://github.com/hsablonniere/cistercian-numerals/blob/master/src/cistercian-clock.js) on GitHub
 * [JavaScript package](https://www.npmjs.com/package/cistercian-numerals) on npm
 * [Animated line drawing SVG](https://jakearchibald.com/2013/animated-line-drawing-svg/) by Jake Archibald
-* [LitElement](https://lit-element.polymer-project.org/), the library I used to build the Web Components
+* [Lit (formerly LitElement)](https://lit.dev/), the library I used to build the Web Components
 * [Web Dev Server](https://modern-web.dev/docs/dev-server/overview/), the dev server I use for live preview
 * [Cistercian SVG](https://adrianroselli.com/2021/02/cistercian-svg.html) by Adrian Roselli 
 * [p5js based cistercian clock](https://ednl.github.io/cistercian-clock/?size=80) by E. Dronkert
 * [Arduino + dot matrix cistercian clock](https://hackaday.io/project/178131-monklock) by Danjovic
 * [Smart watch face cistercian clock](https://getwatchmaker.com/watchface/cistercian-clock) by Philip McGeehan
+* [Smart watch face cisterian clock (inspired by my design)](https://matthewfelgate.wordpress.com/2023/06/26/the-revival-of-cistercian-numerals-a-journey-from-the-15th-century-to-modern-smartwatch/) by Matthew Felgate
 * [React based cistercian number component](https://twitter.com/aqandrew/status/1349762018639638528) by Andrew Aquino
 * [React based cistercian number component](https://mz8i.com/cistercian) by Maciej Ziarkowski
 * [Clairvo](https://github.com/TiroTypeworks/Clairvo), a proof-of-concept font that uses OpenType Layout to implement Cistercian numerals
