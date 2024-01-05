@@ -18,7 +18,7 @@ Here's a list of the conference talks I gave over the past few years.
 
 This talk was co-presented with [Antoine Caron](https://blog.slashgear.dev).
 
-No video yet.
+* 📺 [DevFest Nantes 2023 (french)](https://www.youtube.com/watch?v=JARVYdwNSrI)
 
 ## #BackToBasics: HTTP cache
 <!--## #RetourAuxSources : Le cache HTTP-->
