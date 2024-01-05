@@ -126,7 +126,7 @@ body {
 }
 
 .elsewhere-link[title="Bluesky "] {
-  background-image: url(../img/ykseulb.png);
+  background-image: url(../img/bluesky.svg);
 }
 
 .elsewhere-link[title^="RSS "] {
