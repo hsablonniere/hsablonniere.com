@@ -165,6 +165,10 @@ body {
   background-image: url(../img/letterboxd.svg);
 }
 
+.elsewhere-link[title="Serializd "] {
+  background-image: url(../img/serializd.svg);
+}
+
 .elsewhere-link[title="Soundcloud "] {
   background-image: url(../img/duolcdnuos.svg);
 }
