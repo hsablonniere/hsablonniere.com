@@ -4,7 +4,7 @@
   "homepage": "https://www.hsablonniere.com",
   "author": "Hubert Sablonnière",
   "engines": {
-    "node": "20"
+    "node": "22"
   },
   "scripts": {
     "build": "npm run clear && npm run build:eleventy && npm run build:parcel && npm run build:compress",
@@ -26,6 +26,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
     "@parcel/optimizer-cssnano": "^2.10.1",
+    "@parcel/optimizer-svgo": "^2.15.4",
     "@parcel/packager-raw-url": "^2.10.1",
     "@parcel/plugin": "^2.10.1",
     "@parcel/transformer-webmanifest": "^2.10.1",
@@ -41,10 +42,9 @@
     "posthtml-parser": "^0.12.0",
     "posthtml-render": "^3.0.0",
     "posthtml-urls": "^1.0.0",
-    "prismjs-github": "^1.0.0",
-    "puppeteer": "^21.4.1"
+    "prismjs-github": "^1.0.0"
   },
   "volta": {
-    "node": "20.8.1"
+    "node": "22.17.1"
   }
 }
