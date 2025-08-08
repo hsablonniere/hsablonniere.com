@@ -5,7 +5,7 @@
     "*.html": [
       "./parcel-plugins/parcel-transformer-html-inline-css.mjs",
       "@parcel/transformer-html",
-//      "./parcel-plugins/parcel-transformer-html-og.mjs"
+      "./parcel-plugins/parcel-transformer-html-og.mjs"
     ],
     "*-feed.xml": ["./parcel-plugins/parcel-transformer-atom-feed.mjs"],
     "*.css": ["@parcel/transformer-css"],
