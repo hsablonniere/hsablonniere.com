@@ -15,7 +15,7 @@ export default createPostHtmlTransformer(async (asset) => {
     const idForRelativePath = asset.addURLDependency(imageRelativePath);
 
     // Rewrite the URL with the new relative path ID
-    node.attrs.content = 'https://www.hsablonniere.com' + idForRelativePath;
+    node.attrs.content = idForRelativePath;
 
     return node;
   }
