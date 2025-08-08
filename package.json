@@ -42,7 +42,8 @@
     "posthtml-parser": "^0.12.0",
     "posthtml-render": "^3.0.0",
     "posthtml-urls": "^1.0.0",
-    "prismjs-github": "^1.0.0"
+    "prismjs-github": "^1.0.0",
+    "puppeteer": "^24.16.0"
   },
   "volta": {
     "node": "22.17.1"
