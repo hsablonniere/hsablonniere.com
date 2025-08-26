@@ -109,7 +109,7 @@ Claude Code took around 9 minutes to build the extension.
 I was already thinking "great, I'll install it and move on to a real project".
 
 I installed it and it failed.
-The basics were there, but several details were broken. Also, I forgot to tell it to use [Context7](https://context7.ai/), so it targeted an old version of GNOME Shell and it didn't use the latest ESM syntax.
+The basics were there, but several details were broken. Also, I forgot to tell it to use [Context7](https://context7.com/), so it targeted an old version of GNOME Shell and it didn't use the latest ESM syntax.
 
 ### 👥 The pair programming sessions
 
