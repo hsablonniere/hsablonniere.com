@@ -2,7 +2,7 @@
 id: 95d5fr
 title: "Dotfiles + Claude Code = my tiny config workshop"
 description: "How creating a dotfiles repo gave me a safe space to use Claude Code for system configs, shell functions, and custom shortcuts without giving it access to my entire home directory."
-date: 2026-01-31
+date: 2026-02-02
 tags: article
 layout: article.njk
 ---
@@ -155,7 +155,7 @@ With this setup, I naturally and progressively discovered a new workflow.
 Now, when I need an improvement of my setup, I open Claude Code in my dotfiles folder and prompt.
 Most of the time, the Haiku model is more than enough for these small tasks.
 
-### ✨ Simple things
+### ✨ Simple examples
 
 > Create a `gb` fish function that lists branches when called without arguments, and switches to a branch when given one as argument. Add autocompletion that lists branches sorted by most recently used.
 
@@ -216,7 +216,7 @@ I made a few more like this to toggle things at the end of a command:
 - `Alt+k` for `| jless`: 🔗 [fish/.config/fish/conf.d/30_keybinding_alt_k_jless.fish](https://github.com/hsablonniere/dotfiles/blob/main/fish/.config/fish/conf.d/30_keybinding_alt_k_jless.fish)
 - `Alt+l` for `| less`: 🔗 [fish/.config/fish/conf.d/30_keybinding_alt_l_less.fish](https://github.com/hsablonniere/dotfiles/blob/main/fish/.config/fish/conf.d/30_keybinding_alt_l_less.fish)
 
-### ⭐ My terminal prompt with Starship
+### ⭐ Terminal prompt with Starship
 
 I spent quite some time on my terminal prompt with [Starship](https://starship.rs/).
 I'm colorblind, so I try to pick colors that work for me and have good contrast.
@@ -228,7 +228,7 @@ My latest additions: indicators on the right side showing whether I'm in sudo mo
 
 🔗 [starship/.config/starship.toml](https://github.com/hsablonniere/dotfiles/blob/main/starship/.config/starship.toml)
 
-### 📊 My Claude Code statusline
+### 📊 Claude Code statusline
 
 Claude Code lets you customize the status line at the bottom.
 It gives you a few things about the current session so you can be creative with it.
